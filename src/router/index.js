@@ -15,6 +15,7 @@ import PersonalCabinet from '../views/PersonalCabinet';
 import Product1 from '../views/Product1';
 import Product2 from '../views/Product2';
 import ReturnExchange from '../views/ReturnExchange';
+import Shops from '../views/Shops';
 
 Vue.use(VueRouter);
 
@@ -88,6 +89,11 @@ const routes = [
     path: '/return-exchange',
     name: 'ReturnExchange',
     component: ReturnExchange,
+  },
+  {
+    path: '/shops',
+    name: 'Shops',
+    component: Shops,
   },
 ];
 

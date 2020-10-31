@@ -91,7 +91,7 @@
                 <!-- / Модальное окно открывается после того что выше если пользователь нажмет кнопку нет, в модальном окне будет предложено выбрать его город -->
 
                 <div class="hr-sh-w">
-                  <a href="shops.html" class="hr-sh-a"> Магазины </a>
+                  <a href="shops" class="hr-sh-a"> Магазины </a>
                 </div>
                 <div class="hr-lb-w">
                   <a href="#" class="hr-lb-a"> Ломбарды </a>
@@ -247,7 +247,7 @@
           </div>
         </div>
         <div class="hr-sh-w">
-          <a href="shops.html" class="hr-sh-a"> Магазины </a>
+          <a href="shops" class="hr-sh-a"> Магазины </a>
         </div>
       </div>
       <div class="hr-lb-w-mob">
