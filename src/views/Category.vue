@@ -12,13 +12,18 @@
       </div>
     </section>
     <ProductKinds v-if="productKinds" :category-id="this.id" :product-kinds="productKinds" />
-    <ProductFilter v-if="products" :products="products" />
-    <Products v-if="products" :products="products" />
+    <ProductFilter v-if="products.length" :products="products" />
+    <Products v-if="products.length" :products="products" />
+    <infinite-loading @infinite="setProducts">
+      <div slot="no-more"></div>
+      <div slot="no-results">В данной категории нет товаров</div>
+    </infinite-loading>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import InfiniteLoading from 'vue-infinite-loading';
 
 import ProductKinds from '@/components/category/ProductKinds';
 import ProductFilter from '@/components/category/ProductFilter';
@@ -27,6 +32,7 @@ import Products from '@/components/category/Products';
 export default {
   name: 'Category',
   components: {
+    InfiniteLoading,
     ProductKinds,
     ProductFilter,
     Products,
@@ -42,14 +48,14 @@ export default {
   },
   data() {
     return {
+      page: 1,
       title: null,
       productKinds: null,
-      products: null,
+      products: [],
     };
   },
   mounted() {
     this.setCategoryInfo();
-    this.setProducts();
   },
   methods: {
     setCategoryInfo() {
@@ -62,12 +68,12 @@ export default {
           this.productKinds = targetCategory.ProductKinds;
         });
     },
-    setProducts() {
+    setProducts($state) {
       axios.post('https://api.m-lombard.kz/getProducts', {
         lowPrice: null,
         highPrice: null,
-        page: 1,
-        count: 20,
+        page: this.page,
+        count: 12,
         sort: null,
         ProductCategoriesFilter: [this.id],
         ProductKindsFilter: this.productKindId ? [this.productKindId] : [],
@@ -78,7 +84,13 @@ export default {
         ChainSizeFilter: [],
       })
         .then((res) => {
-          this.products = res.data.Products;
+          if (res.data.Products) {
+            this.page += 1;
+            this.products.push(...res.data.Products);
+            $state.loaded();
+          } else {
+            $state.complete();
+          }
         });
     },
   },
