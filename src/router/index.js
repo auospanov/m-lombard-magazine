@@ -23,6 +23,11 @@ const routes = [
     name: 'AboutCompany',
     component: AboutCompany,
   },
+  {
+    path: '/cart-empty',
+    name: 'CartEmpty',
+    component: CartEmpty,
+  },
 ];
 
 const router = new VueRouter({
