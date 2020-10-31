@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Slider />
     <div class="home-goods">
       <div class="container">
         <div class="row goods-row">
@@ -123,9 +124,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
+import Slider from '@/components/home/Slider';
 
 export default {
   name: 'Home',
+  components: {
+    Slider,
+  },
 };
 </script>
