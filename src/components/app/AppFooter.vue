@@ -8,7 +8,7 @@
             <ul>
               <li><a href="personal-cabinet">Личный кабинет</a></li>
               <li><a href="delivery-payment">Доставка и оплата</a></li>
-              <li><a href="return-exchange.html">Возврат и обмен</a></li>
+              <li><a href="return-exchange">Возврат и обмен</a></li>
               <li><a href="">Акции</a></li>
               <li><a href="">Клуб привелегий</a></li>
               <li><a href="">Рассрочка и кредит</a></li>
@@ -40,7 +40,7 @@
               <li><a href="index.html" class="footer-list-title">Покупателям</a></li>
               <li><a href="personal-cabinet">Личный кабинет</a></li>
               <li><a href="delivery-payment">Доставка и оплата</a></li>
-              <li><a href="return-exchange.html">Возврат и обмен</a></li>
+              <li><a href="return-exchange">Возврат и обмен</a></li>
               <li><a href="">Акции</a></li>
               <li><a href="">Клуб привелегий</a></li>
               <li><a href="">Рассрочка и кредит</a></li>
