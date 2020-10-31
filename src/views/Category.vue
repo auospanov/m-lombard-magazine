@@ -150,7 +150,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/accessories-4.jpeg" alt="Цепочка, плетение Бисмарк, из серебра" class="fav-item-goods-img">
                 </div>
@@ -170,7 +170,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/earring-3.jpeg" alt="Серьги TALANT из золота с изумрудами и бриллиантами" class="fav-item-goods-img">
                 </div>
@@ -190,7 +190,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/ring-1.jpeg" alt="Кольцо обручальное" class="fav-item-goods-img">
                 </div>
@@ -210,7 +210,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/accessories-3.jpeg" alt="Браслет, плетение Ромб тройной, из золота" class="fav-item-goods-img">
                 </div>
@@ -230,7 +230,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/earring-2.jpeg" alt="Серьги-пусеты с фианитом из серебра" class="fav-item-goods-img">
                 </div>
@@ -250,7 +250,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/watch-1.jpeg" alt="Часы наручные Talant" class="fav-item-goods-img">
                 </div>
@@ -270,7 +270,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/earring-1.jpeg" alt="Серьга-пусета из золота с бриллиантом" class="fav-item-goods-img">
                 </div>
@@ -290,7 +290,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/accessories-2.jpeg" alt="Подвеска TALANT из золота с фианитом" class="fav-item-goods-img">
                 </div>
@@ -310,7 +310,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/silver-1.jpeg" alt="Подвеска из серебра с фианитом" class="fav-item-goods-img">
                 </div>
@@ -330,7 +330,7 @@
                   <i class="far fa-heart" onclick="myFunction(this)"></i>
                 </div>
               </div>
-              <a href="product-2.html" class="fav-item-a-wrap">
+              <a href="product-2" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img src="@/assets/images/accessories-1.jpeg" alt="Зажим для галстука из серебра" class="fav-item-goods-img">
                 </div>
