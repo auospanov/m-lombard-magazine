@@ -9,6 +9,7 @@ import Cart from '../views/Cart';
 import Contacts from '../views/Contacts';
 import DeliveryPayment from '../views/DeliveryPayment';
 import Faq from '../views/Faq';
+import FavoritesEmpty from '../views/FavoritesEmpty';
 
 Vue.use(VueRouter);
 
@@ -52,6 +53,11 @@ const routes = [
     path: '/faq',
     name: 'Faq',
     component: Faq,
+  },
+  {
+    path: '/favorites-empty',
+    name: 'FavoritesEmpty',
+    component: FavoritesEmpty,
   },
 ];
 
