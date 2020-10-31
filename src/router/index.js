@@ -12,6 +12,7 @@ import Faq from '../views/Faq';
 import FavoritesEmpty from '../views/FavoritesEmpty';
 import Favorites from '../views/Favorites';
 import PersonalCabinet from '../views/PersonalCabinet';
+import Product1 from '../views/Product1';
 
 Vue.use(VueRouter);
 
@@ -70,6 +71,11 @@ const routes = [
     path: '/personal-cabinet',
     name: 'PersonalCabinet',
     component: PersonalCabinet,
+  },
+  {
+    path: '/product-1',
+    name: 'Product1',
+    component: Product1,
   },
 ];
 
