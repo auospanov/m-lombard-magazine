@@ -12,7 +12,7 @@
               <li><a href="">Акции</a></li>
               <li><a href="">Клуб привелегий</a></li>
               <li><a href="">Рассрочка и кредит</a></li>
-              <li><a href="faq.html">Частые вопросы</a></li>
+              <li><a href="faq">Частые вопросы</a></li>
               <li><a href="">Журнал</a></li>
               <li><a href="">Карта сайта</a></li>
             </ul>
@@ -44,7 +44,7 @@
               <li><a href="">Акции</a></li>
               <li><a href="">Клуб привелегий</a></li>
               <li><a href="">Рассрочка и кредит</a></li>
-              <li><a href="faq.html">Частые вопросы</a></li>
+              <li><a href="faq">Частые вопросы</a></li>
               <li><a href="">Журнал</a></li>
               <li><a href="">Карта сайта</a></li>
             </ul>

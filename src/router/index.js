@@ -8,6 +8,7 @@ import CartEmpty from '../views/CartEmpty';
 import Cart from '../views/Cart';
 import Contacts from '../views/Contacts';
 import DeliveryPayment from '../views/DeliveryPayment';
+import Faq from '../views/Faq';
 
 Vue.use(VueRouter);
 
@@ -46,6 +47,11 @@ const routes = [
     path: '/delivery-payment',
     name: 'DeliveryPayment',
     component: DeliveryPayment,
+  },
+  {
+    path: '/faq',
+    name: 'Faq',
+    component: Faq,
   },
 ];
 
