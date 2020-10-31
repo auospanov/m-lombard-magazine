@@ -27,8 +27,8 @@
               <li><a href="">Социальные проекты</a></li>
               <li><a href="">Франчайзинг</a></li>
               <li><a href="">Займы до зарплаты</a></li>
-              <li><a href="">Контакты</a></li>
-              <li><a href="contacts.html">Правовая информация</a></li>
+              <li><a href="contacts">Контакты</a></li>
+              <li><a href="">Правовая информация</a></li>
             </ul>
           </div>
         </div>
@@ -60,8 +60,8 @@
               <li><a href="">Социальные проекты</a></li>
               <li><a href="">Франчайзинг</a></li>
               <li><a href="">Займы до зарплаты</a></li>
-              <li><a href="">Контакты</a></li>
-              <li><a href="contacts.html">Правовая информация</a></li>
+              <li><a href="contacts">Контакты</a></li>
+              <li><a href="">Правовая информация</a></li>
             </ul>
           </div>
         </div>
