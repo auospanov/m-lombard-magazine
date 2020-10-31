@@ -101,7 +101,7 @@
                 <a href="#" class="hr-w-ic-search">
                   <img src="@/assets/images/search.svg" alt="поиск" />
                 </a>
-                <a href="favorites.html" class="hr-w-ic-like">
+                <a href="favorites" class="hr-w-ic-like">
                   <img src="@/assets/images/like.svg" alt="избранные" />
                 </a>
                 <a href="#" class="hr-w-ic-cart">

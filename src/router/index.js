@@ -10,6 +10,7 @@ import Contacts from '../views/Contacts';
 import DeliveryPayment from '../views/DeliveryPayment';
 import Faq from '../views/Faq';
 import FavoritesEmpty from '../views/FavoritesEmpty';
+import Favorites from '../views/Favorites';
 
 Vue.use(VueRouter);
 
@@ -58,6 +59,11 @@ const routes = [
     path: '/favorites-empty',
     name: 'FavoritesEmpty',
     component: FavoritesEmpty,
+  },
+  {
+    path: '/favorites',
+    name: 'Favorites',
+    component: Favorites,
   },
 ];
 
