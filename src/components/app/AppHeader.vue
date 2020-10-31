@@ -14,7 +14,7 @@
           </div>
           <div class="col-md-7 col-lg-7 col-sm-6 col-xs-6">
             <div class="hl-lg-w">
-              <a href="index.html" class="hl-lg-a">
+              <a href="/" class="hl-lg-a">
                 <img src="@/assets/images/8jsg-_2k1.png" alt="логотип" />
               </a>
             </div>
