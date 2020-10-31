@@ -30,7 +30,7 @@
                 </div>
 
                 <!-- Модальное окно открывается при первом входе на сайт и спрашивает ваш ли это город -->
-                <div class="hr-lc-dropdown" id="city_dropdown">
+                <div class="hr-lc-dropdown" id="city_dropdown" style="display: none;">
                   <div class="hr-lc-dropdown-body">
                     <div class="hr-lc-dropdown-city-name">Алматы</div>
                     <div class="hr-lc-dropdown-ask">Это ваш город?</div>
