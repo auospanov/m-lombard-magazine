@@ -123,93 +123,93 @@
             <nav>
               <ul class="first-ul">
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Бриллианты</a
                   >
                 </li>
                 <li class="header-first-list">
-                  <a href="category.html" class="header-first-list-a">Кольца</a>
+                  <a href="category" class="header-first-list-a">Кольца</a>
                   <div class="dropdown">
                     <ul class="dropdown-menu">
                       <li class="header-second-list">
-                        <a href="category.html">Все кольца</a>
+                        <a href="category">Все кольца</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Золотые кольца</a>
+                        <a href="category">Золотые кольца</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Серебрянные кольца</a>
+                        <a href="category">Серебрянные кольца</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Без вставок</a>
+                        <a href="category">Без вставок</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Обручальные кольца</a>
+                        <a href="category">Обручальные кольца</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Помолвочные кольца</a>
+                        <a href="category">Помолвочные кольца</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Кольца с бриллиантами</a>
+                        <a href="category">Кольца с бриллиантами</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Кольца с цветными камнями</a>
+                        <a href="category">Кольца с цветными камнями</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Кольца с фианитами</a>
+                        <a href="category">Кольца с фианитами</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Кольца с эмалью</a>
+                        <a href="category">Кольца с эмалью</a>
                       </li>
                       <li class="header-second-list">
-                        <a href="category.html">Печатки</a>
+                        <a href="category">Печатки</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Обручальные кольца</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Комплекты</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a">Серьги</a>
+                  <a href="category" class="header-first-list-a">Серьги</a>
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Цепи и колье</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Национальные украшения</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Браслеты</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Подвески</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Мужчинам</a
                   >
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a">Часы</a>
+                  <a href="category" class="header-first-list-a">Часы</a>
                 </li>
                 <li>
-                  <a href="category.html" class="header-first-list-a"
+                  <a href="category" class="header-first-list-a"
                     >Милые мелочи красотульки</a
                   >
                 </li>
@@ -263,7 +263,7 @@
       <nav id="mobile">
         <ul class="mobile-ul">
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Бриллианты</a>
+            <a href="category" class="header-first-list-a">Бриллианты</a>
           </li>
           <li class="mobile-li">
             <a href="#" class="mobile-a dropdown-toggle" data-toggle="dropdown"
@@ -272,74 +272,74 @@
             <div class="dropdown-content">
               <ul class="dropdown-menu">
                 <li class="header-second-list">
-                  <a href="category.html">Все кольца</a>
+                  <a href="category">Все кольца</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Золотые кольца</a>
+                  <a href="category">Золотые кольца</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Серебрянные кольца</a>
+                  <a href="category">Серебрянные кольца</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Без вставок</a>
+                  <a href="category">Без вставок</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Обручальные кольца</a>
+                  <a href="category">Обручальные кольца</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Помолвочные кольца</a>
+                  <a href="category">Помолвочные кольца</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Кольца с бриллиантами</a>
+                  <a href="category">Кольца с бриллиантами</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Кольца с цветными камнями</a>
+                  <a href="category">Кольца с цветными камнями</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Кольца с фианитами</a>
+                  <a href="category">Кольца с фианитами</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Кольца с эмалью</a>
+                  <a href="category">Кольца с эмалью</a>
                 </li>
                 <li class="header-second-list">
-                  <a href="category.html">Печатки</a>
+                  <a href="category">Печатки</a>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="category.html" class="header-first-list-a"
+            <a href="category" class="header-first-list-a"
               >Обручальные кольца</a
             >
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Комплекты</a>
+            <a href="category" class="header-first-list-a">Комплекты</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Серьги</a>
+            <a href="category" class="header-first-list-a">Серьги</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Цепи и колье</a>
+            <a href="category" class="header-first-list-a">Цепи и колье</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a"
+            <a href="category" class="header-first-list-a"
               >Национальные украшения</a
             >
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Браслеты</a>
+            <a href="category" class="header-first-list-a">Браслеты</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Подвески</a>
+            <a href="category" class="header-first-list-a">Подвески</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Мужчинам</a>
+            <a href="category" class="header-first-list-a">Мужчинам</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a">Часы</a>
+            <a href="category" class="header-first-list-a">Часы</a>
           </li>
           <li class="header-second-list">
-            <a href="category.html" class="header-first-list-a"
+            <a href="category" class="header-first-list-a"
               >Милые мелочи красотульки</a
             >
           </li>
