@@ -11,6 +11,7 @@ import DeliveryPayment from '../views/DeliveryPayment';
 import Faq from '../views/Faq';
 import FavoritesEmpty from '../views/FavoritesEmpty';
 import Favorites from '../views/Favorites';
+import PersonalCabinet from '../views/PersonalCabinet';
 
 Vue.use(VueRouter);
 
@@ -64,6 +65,11 @@ const routes = [
     path: '/favorites',
     name: 'Favorites',
     component: Favorites,
+  },
+  {
+    path: '/personal-cabinet',
+    name: 'PersonalCabinet',
+    component: PersonalCabinet,
   },
 ];
 

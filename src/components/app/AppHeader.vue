@@ -107,7 +107,7 @@
                 <a href="#" class="hr-w-ic-cart">
                   <img src="@/assets/images/cart.svg" alt="корзина" />
                 </a>
-                <a href="personal-cabinet.html" class="hr-w-ic-login">
+                <a href="personal-cabinet" class="hr-w-ic-login">
                   <img src="@/assets/images/user.svg" alt="пользователь" />
                 </a>
               </div>
@@ -254,7 +254,7 @@
         <a href="#" class="hr-lb-a"> Ломбарды </a>
       </div>
       <div class="hr-lg-w-mob">
-        <a href="personal-cabinet.html" class="hr-w-ic-login">
+        <a href="personal-cabinet" class="hr-w-ic-login">
           <img src="@/assets/images/user.svg" alt="пользователь" />
           Войти
         </a>
