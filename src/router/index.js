@@ -4,6 +4,8 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home';
 import Category from '../views/Category';
 import AboutCompany from '../views/AboutCompany';
+import CartEmpty from '../views/CartEmpty';
+import Cart from '../views/Cart';
 
 Vue.use(VueRouter);
 
@@ -27,6 +29,11 @@ const routes = [
     path: '/cart-empty',
     name: 'CartEmpty',
     component: CartEmpty,
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart,
   },
 ];
 
