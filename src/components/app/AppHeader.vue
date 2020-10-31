@@ -38,14 +38,12 @@
                   <div class="hr-lc-dropdown-btns-wrap">
                     <button
                       id="yes_city"
-                      class="hr-lc-dropdown-yes-btn hr-lc-dropdown-btns"
-                      onclick="closeCityModal()"
+                      class="hr-lc-dropdown-yes-btn hr-lc-dropdown-btns js-close-city-modal"
                     >
                       Да, верно
                     </button>
                     <button
-                      class="hr-lc-dropdown-no-btn hr-lc-dropdown-btns"
-                      onclick="nextCityModal()"
+                      class="hr-lc-dropdown-no-btn hr-lc-dropdown-btns js-next-city-modal"
                     >
                       Нет, другой
                     </button>
@@ -238,12 +236,11 @@
             <div class="hr-lc-dropdown-btns-wrap">
               <button
                 id="yes_city"
-                class="hr-lc-dropdown-yes-btn hr-lc-dropdown-btns"
-                onclick="closeCityModal()"
+                class="hr-lc-dropdown-yes-btn hr-lc-dropdown-btns js-close-city-modal"
               >
                 Да, верно
               </button>
-              <button class="hr-lc-dropdown-no-btn hr-lc-dropdown-btns">
+              <button class="hr-lc-dropdown-no-btn hr-lc-dropdown-btns js-next-city-modal">
                 Нет, другой
               </button>
             </div>

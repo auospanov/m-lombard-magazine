@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './assets/css/styles.css';
 
+import './assets/js/main';
+
 import Vue from 'vue';
 import App from './App';
 import router from './router';
