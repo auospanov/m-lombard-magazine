@@ -26,9 +26,16 @@ const routes = [
     component: Home,
   },
   {
-    path: '/category',
+    path: '/category/:id',
     name: 'Category',
     component: Category,
+    props: true,
+  },
+  {
+    path: '/category/:id/:productKindId',
+    name: 'Category',
+    component: Category,
+    props: true,
   },
   {
     path: '/about-company',

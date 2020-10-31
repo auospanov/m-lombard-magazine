@@ -22,6 +22,7 @@ module.exports = {
         "jsx": "never",
         "vue": "never"
       }
-   ]
+   ],
+   "import/prefer-default-export": "off",
   },
 };

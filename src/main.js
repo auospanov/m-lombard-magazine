@@ -1,6 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import './assets/css/reset.css';
 import './assets/css/styles.css';
 
 import './assets/js/main';

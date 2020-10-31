@@ -1,4 +1,5 @@
 /* eslint-disable */
+import $ from 'jquery';
 
 $(document).ready(function(){
     initBurger();
