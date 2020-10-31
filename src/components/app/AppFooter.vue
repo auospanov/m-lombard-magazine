@@ -20,7 +20,7 @@
           <button class="collapsible">О компании</button>
           <div class="footer-content">
             <ul>
-              <li><a href="about-company.html" class="footer-list-title">О компании</a></li>
+              <li><a href="about-company" class="footer-list-title">О компании</a></li>
               <li><a href="">Работа у нас</a></li>
               <li><a href="">Корпоративная культура</a></li>
               <li><a href="">Ломбарды</a></li>
@@ -53,7 +53,7 @@
         <div class="col-md-2 desktop-footer">
           <div class="footer-list-wrap">
             <ul>
-              <li><a href="about-company.html" class="footer-list-title">О компании</a></li>
+              <li><a href="about-company" class="footer-list-title">О компании</a></li>
               <li><a href="">Работа у нас</a></li>
               <li><a href="">Корпоративная культура</a></li>
               <li><a href="">Ломбарды</a></li>
