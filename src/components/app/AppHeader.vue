@@ -21,7 +21,7 @@
             <div class="hr-w">
               <div class="hr-w-left">
                 <div class="hr-lc-w">
-                  <a href="#" class="hr-lc-a">
+                  <a href="#" class="hr-lc-a js-open-city-modal">
                     <img src="@/assets/images/location.svg" alt="локация" />
                     <span>Алматы</span>
                   </a>
@@ -149,12 +149,12 @@
     <div class="mobile-tab">
       <div class="hr-lc-w-mob">
         <div class="hr-lc-w">
-          <a href="#" class="hr-lc-a">
+          <a href="#" class="hr-lc-a js-open-city-modal">
             <img src="@/assets/images/location.svg" alt="локация" />
             <span>Алматы</span>
           </a>
 
-          <div class="hr-lc-dropdown-mob" id="city_dropdown_mob">
+          <div class="hr-lc-dropdown-mob" id="city_dropdown_mob" style="display: none;">
             <div class="hr-lc-dropdown-body">
               <div class="hr-lc-dropdown-city-name">Алматы</div>
               <div class="hr-lc-dropdown-ask">Это ваш город?</div>

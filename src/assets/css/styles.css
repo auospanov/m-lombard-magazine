@@ -206,6 +206,9 @@ button.hr-lc-dropdown-btns:focus {
     .hr-lc-dropdown {
         display: none;
     }
+    #city_dropdown {
+        display: none !important;
+    }
     #city_dropdown_mob {
         position: absolute;
         background-color: #fff;

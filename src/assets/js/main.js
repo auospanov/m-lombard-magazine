@@ -15,16 +15,26 @@ function initBurger() {
 }
 
 function initCityModal() {
-    $('.js-close-city-modal').on('click', closeCityModal);
-    $('.js-next-city-modal').on('click', nextCityModal);
+    document.querySelectorAll('.js-open-city-modal').forEach(el => el.addEventListener('click', openCityModal));
+    document.querySelectorAll('.js-close-city-modal').forEach(el => el.addEventListener('click', closeCityModal));
+    document.querySelectorAll('.js-next-city-modal').forEach(el => el.addEventListener('click', nextCityModal));
+
+    function openCityModal(e) {
+        e.preventDefault();
+        document.querySelector('#city_dropdown').style.display = "block";
+        document.querySelector('#city_dropdown_mob').style.display = "block";
+    }
 
     function closeCityModal() {
-        document.getElementById('city_dropdown').style.display = "none";
+        document.querySelector('#city_dropdown').style.display = "none";
+        document.querySelector('#city_dropdown_2').style.display = "none";
+        document.querySelector('#city_dropdown_mob').style.display = "none";
     }
     
     function nextCityModal() {
-        document.getElementById('city_dropdown').style.display = "none";
-        document.getElementById('city_dropdown_2').style.display = "block";
+        document.querySelector('#city_dropdown').style.display = "none";
+        document.querySelector('#city_dropdown_mob').style.display = "none";
+        document.querySelector('#city_dropdown_2').style.display = "block";
     }
 }
 
