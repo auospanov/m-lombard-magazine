@@ -14,7 +14,7 @@
                 <i class="far fa-heart" onclick="myFunction(this)"></i>
               </div>
             </div>
-            <a href="product-2" class="fav-item-a-wrap">
+            <a href="/product-2" class="fav-item-a-wrap">
               <div class="fav-item-goods-img-wrap">
                 <img
                   src="@/assets/images/accessories-4.jpeg"
