@@ -17,8 +17,8 @@
             <a href="/product-2" class="fav-item-a-wrap">
               <div class="fav-item-goods-img-wrap">
                 <img
-                  src="@/assets/images/accessories-4.jpeg"
-                  alt="Цепочка, плетение Бисмарк, из серебра"
+                  src="@/assets/images/ring-1.jpeg"
+                  :alt="product.Product"
                   class="fav-item-goods-img"
                 />
               </div>
