@@ -35,7 +35,7 @@ const routes = [
   },
   {
     path: '/category/:id/:productKindId',
-    name: 'Category',
+    name: 'CategoryProductKind',
     component: Category,
     props: true,
     meta: { title: 'М-Ломбард - Товары' },
