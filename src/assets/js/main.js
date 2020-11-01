@@ -58,17 +58,20 @@ function initCollapse() {
 /* Смена иконки сердце (избранное) при клике на него *для страницы Категорий, шаблон category */
 function myFunction(x) {
     x.classList.toggle("fas");
-} 
+}
+window.myFunction = myFunction;
 /* / Смена иконки сердце (избранное) при клике на него *для страницы Категорий, шаблон category */
 
 /* Смена иконки сердце (избранное) при клике на него *для страницы Избранные, шаблон favorite.html */
 function myFunction2(x) {
     x.classList.toggle("fas");
-} 
+}
+window.myFunction2 = myFunction2;
 /* / Смена иконки сердце (избранное) при клике на него *для страницы Избранные, шаблон favorite.html */
 
 /* Смена иконки сердце (избранное) при клике на него *для страницы Избранные, шаблон favorite.html */
 function myFunction3(x) {
     x.classList.toggle("fas");
-} 
+}
+window.myFunction3 = myFunction3;
 /* / Смена иконки сердце (избранное) при клике на него *для страницы Избранные, шаблон favorite.html */
