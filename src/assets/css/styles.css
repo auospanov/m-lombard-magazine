@@ -752,6 +752,9 @@ img.category-subcategory-img {
 .filter-wrap-result {
     padding: 0 0 0 10px;
 }
+.filter-mobile-wrapper {
+    width: 100%;
+}
 .filter-mobile-line {
     display: none;
 }
