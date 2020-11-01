@@ -5,11 +5,9 @@
         <div class="row">
           <div class="col-md-7 col-lg-7 col-sm-2 col-2">
             <div id="burg">
-              <a href="#">
-                <span class="bar" id="top"></span>
-                <span class="bar" id="middle"></span>
-                <span class="bar" id="bottom"></span>
-              </a>
+              <span class="bar" id="top"></span>
+              <span class="bar" id="middle"></span>
+              <span class="bar" id="bottom"></span>
             </div>
           </div>
           <div class="col-md-7 col-lg-7 col-sm-6 col-6">
