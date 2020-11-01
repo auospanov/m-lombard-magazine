@@ -19,7 +19,7 @@
     <section class="fav-body-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-40%</div>
               <div class="fav-item-heart-wrap">
@@ -45,7 +45,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-50%</div>
               <div class="fav-item-heart-wrap">
@@ -71,7 +71,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-10%</div>
               <div class="fav-item-heart-wrap">
@@ -97,7 +97,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-20%</div>
               <div class="fav-item-heart-wrap">
@@ -123,7 +123,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent"></div>
               <div class="fav-item-heart-wrap">
@@ -147,7 +147,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent"></div>
               <div class="fav-item-heart-wrap">
@@ -173,7 +173,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-50%</div>
               <div class="fav-item-heart-wrap">
@@ -199,7 +199,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-40%</div>
               <div class="fav-item-heart-wrap">
@@ -225,7 +225,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent"></div>
               <div class="fav-item-heart-wrap">
@@ -249,7 +249,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-xs-6">
+          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
             <div class="fav-item-wrap anymore-chosen">
               <div class="fav-item-sale-percent">-40%</div>
               <div class="fav-item-heart-wrap">

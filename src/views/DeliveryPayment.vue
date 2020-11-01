@@ -28,7 +28,7 @@
         </div>
         <div class="delivery-payment-items-wrap">
           <div class="row row-border-bottom">
-            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+            <div class="col-md-2 col-lg-2 col-sm-3 col-3">
               <div class="delivery-payment-2-img-wrap">
                 <img
                   src="@/assets/images/truck.svg"
@@ -37,7 +37,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9">
+            <div class="col-md-10 col-lg-10 col-sm-9 col-9">
               <div class="delivery-payment-2-wrap">
                 <p class="p-regular p-delivery-paymen-icon-p">
                   Укажите удобный адрес получения заказа и мы отправим его одной
@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="row row-border-bottom">
-            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+            <div class="col-md-2 col-lg-2 col-sm-3 col-3">
               <div class="delivery-payment-2-img-wrap">
                 <img
                   src="@/assets/images/support.svg"
@@ -56,7 +56,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9">
+            <div class="col-md-10 col-lg-10 col-sm-9 col-9">
               <div class="delivery-payment-2-wrap">
                 <p class="p-regular p-delivery-paymen-icon-p">
                   После оформления заказа наши специалисты Службы заботы о
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="row row-border-bottom">
-            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+            <div class="col-md-2 col-lg-2 col-sm-3 col-3">
               <div class="delivery-payment-2-img-wrap">
                 <img
                   src="@/assets/images/courier.svg"
@@ -76,7 +76,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9">
+            <div class="col-md-10 col-lg-10 col-sm-9 col-9">
               <div class="delivery-payment-2-wrap">
                 <p class="p-regular p-delivery-paymen-icon-p">
                   Перед доставкой заказа Вам позвонит специалист курьерской
@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="row row-border-bottom">
-            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+            <div class="col-md-2 col-lg-2 col-sm-3 col-3">
               <div class="delivery-payment-2-img-wrap">
                 <img
                   src="@/assets/images/paper.svg"
@@ -95,7 +95,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9">
+            <div class="col-md-10 col-lg-10 col-sm-9 col-9">
               <div class="delivery-payment-2-wrap">
                 <p class="p-regular p-delivery-paymen-icon-p">
                   Для получения заказа от курьера Вам необходимо иметь документ,

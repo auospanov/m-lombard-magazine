@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-md-2 col-lg-2 col-sm-6 col-xs-6"
+          class="col-md-2 col-lg-2 col-sm-6 col-6"
           v-for="product in products"
           :key="product.ProductID"
         >

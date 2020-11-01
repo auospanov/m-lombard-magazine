@@ -3,7 +3,7 @@
     <div class="h-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-lg-7 col-sm-2 col-xs-2">
+          <div class="col-md-7 col-lg-7 col-sm-2 col-2">
             <div id="burg">
               <a href="#">
                 <span class="bar" id="top"></span>
@@ -12,14 +12,14 @@
               </a>
             </div>
           </div>
-          <div class="col-md-7 col-lg-7 col-sm-6 col-xs-6">
+          <div class="col-md-7 col-lg-7 col-sm-6 col-6">
             <div class="hl-lg-w">
               <a href="/" class="hl-lg-a">
                 <img src="@/assets/images/8jsg-_2k1.png" alt="логотип" />
               </a>
             </div>
           </div>
-          <div class="col-md-5 col-sm-4 col-xs-4">
+          <div class="col-md-5 col-sm-4 col-4">
             <div class="hr-w">
               <div class="hr-w-left">
                 <div class="hr-lc-w">
