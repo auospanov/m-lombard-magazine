@@ -6,13 +6,13 @@
           <button class="collapsible">Покупателям</button>
           <div class="footer-content">
             <ul>
-              <li><a href="personal-cabinet">Личный кабинет</a></li>
-              <li><a href="delivery-payment">Доставка и оплата</a></li>
-              <li><a href="return-exchange">Возврат и обмен</a></li>
+              <li><a href="/personal-cabinet">Личный кабинет</a></li>
+              <li><a href="/delivery-payment">Доставка и оплата</a></li>
+              <li><a href="/return-exchange">Возврат и обмен</a></li>
               <li><a href="">Акции</a></li>
               <li><a href="">Клуб привелегий</a></li>
               <li><a href="">Рассрочка и кредит</a></li>
-              <li><a href="faq">Частые вопросы</a></li>
+              <li><a href="/faq">Частые вопросы</a></li>
               <li><a href="">Журнал</a></li>
               <li><a href="">Карта сайта</a></li>
             </ul>
@@ -20,14 +20,14 @@
           <button class="collapsible">О компании</button>
           <div class="footer-content">
             <ul>
-              <li><a href="about-company" class="footer-list-title">О компании</a></li>
+              <li><a href="/about-company" class="footer-list-title">О компании</a></li>
               <li><a href="">Работа у нас</a></li>
               <li><a href="">Корпоративная культура</a></li>
               <li><a href="">Ломбарды</a></li>
               <li><a href="">Социальные проекты</a></li>
               <li><a href="">Франчайзинг</a></li>
               <li><a href="">Займы до зарплаты</a></li>
-              <li><a href="contacts">Контакты</a></li>
+              <li><a href="/contacts">Контакты</a></li>
               <li><a href="">Правовая информация</a></li>
             </ul>
           </div>
@@ -38,13 +38,13 @@
           <div class="footer-list-wrap">
             <ul>
               <li><a href="/" class="footer-list-title">Покупателям</a></li>
-              <li><a href="personal-cabinet">Личный кабинет</a></li>
-              <li><a href="delivery-payment">Доставка и оплата</a></li>
-              <li><a href="return-exchange">Возврат и обмен</a></li>
+              <li><a href="/personal-cabinet">Личный кабинет</a></li>
+              <li><a href="/delivery-payment">Доставка и оплата</a></li>
+              <li><a href="/return-exchange">Возврат и обмен</a></li>
               <li><a href="">Акции</a></li>
               <li><a href="">Клуб привелегий</a></li>
               <li><a href="">Рассрочка и кредит</a></li>
-              <li><a href="faq">Частые вопросы</a></li>
+              <li><a href="/faq">Частые вопросы</a></li>
               <li><a href="">Журнал</a></li>
               <li><a href="">Карта сайта</a></li>
             </ul>
@@ -53,14 +53,14 @@
         <div class="col-md-2 desktop-footer">
           <div class="footer-list-wrap">
             <ul>
-              <li><a href="about-company" class="footer-list-title">О компании</a></li>
+              <li><a href="/about-company" class="footer-list-title">О компании</a></li>
               <li><a href="">Работа у нас</a></li>
               <li><a href="">Корпоративная культура</a></li>
               <li><a href="">Ломбарды</a></li>
               <li><a href="">Социальные проекты</a></li>
               <li><a href="">Франчайзинг</a></li>
               <li><a href="">Займы до зарплаты</a></li>
-              <li><a href="contacts">Контакты</a></li>
+              <li><a href="/contacts">Контакты</a></li>
               <li><a href="">Правовая информация</a></li>
             </ul>
           </div>
