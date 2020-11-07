@@ -102,10 +102,10 @@
                 <a href="/favorites" class="hr-w-ic-like">
                   <img src="@/assets/images/like.svg" alt="избранные" />
                 </a>
-                <a href="#" class="header-cart hr-w-ic-cart">
+                <router-link to="/cart" class="header-cart hr-w-ic-cart">
                   <img src="@/assets/images/cart.svg" alt="корзина" />
                   <span v-if="cartCount" class="header-cart__counter">{{ cartCount }}</span>
-                </a>
+                </router-link>
                 <a href="/personal-cabinet" class="hr-w-ic-login">
                   <img src="@/assets/images/user.svg" alt="пользователь" />
                 </a>
