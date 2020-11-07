@@ -1,3 +1,4 @@
 export const MUTATION_TYPES = {
   SET_CUSTOMER_ID: 'SET_CUSTOMER_ID',
+  SET_CART: 'SET_CART',
 };

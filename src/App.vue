@@ -20,7 +20,8 @@ export default {
   },
   mounted() {
     this.INIT_CUSTOMER_ID();
+    this.INIT_CART();
   },
-  methods: mapActions(['INIT_CUSTOMER_ID']),
+  methods: mapActions(['INIT_CUSTOMER_ID', 'INIT_CART']),
 };
 </script>

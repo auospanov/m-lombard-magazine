@@ -598,6 +598,9 @@ h1.e-h1 {
 .e-button:hover {
     background-color: #ffe200;
 }
+.e-button:disabled {
+    opacity: 0.5;
+}
 
 /* стили страницы избранные */
 section.fav-head-section {

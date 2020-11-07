@@ -58,8 +58,12 @@
               </div>
 
               <div class="product-add-to-cart-wrap">
-                <button class="product-add-to-cart e-button">
-                  Добавить в корзину
+                <button class="product-add-to-cart e-button" @click="addItemCart" :disabled="isExistInCart" >
+                  <span v-if="isExistInCart">Товар в корзине</span>
+                  <span v-if="!isExistInCart">Добавить в корзину</span>
+                </button>
+                <button v-if="isExistInCart" class="product-add-to-cart e-button" @click="removeItemCart">
+                  Удалить из корзины
                 </button>
                 <div class="product-add-to-chosen">
                   <i
@@ -130,7 +134,10 @@
 
 <script>
 import axios from 'axios';
+import { mapState, mapActions } from 'vuex';
+
 import { prettyPrice } from '@shared/utils/text';
+import { appLoader } from '@shared/utils/app-loader';
 
 // modal slider
 function openModal() {
@@ -163,6 +170,12 @@ export default {
       product: null,
     };
   },
+  computed: {
+    ...mapState(['cart']),
+    isExistInCart() {
+      return this.cart.some((cartItem) => cartItem.ProductID === this.product.ProductID);
+    },
+  },
   mounted() {
     this.fetchProduct();
 
@@ -186,8 +199,11 @@ export default {
     }
   },
   methods: {
+    ...mapActions(['ADD_CART_ITEM', 'REMOVE_CART_ITEM']),
     prettyPrice,
     fetchProduct() {
+      appLoader.show();
+
       axios.post('https://api.m-lombard.kz/GetProductByID', {
         CustomerIIN: '',
         CustomerID: '1',
@@ -200,7 +216,25 @@ export default {
           }
 
           this.product = res.data.Product;
+          appLoader.hide();
         });
+    },
+    addItemCart() {
+      appLoader.show();
+
+      this.ADD_CART_ITEM({
+        ProductNumber: this.product.ProductID,
+        ProductPrice: this.product.Price,
+      })
+        .then(() => appLoader.hide());
+    },
+    removeItemCart() {
+      appLoader.show();
+
+      this.REMOVE_CART_ITEM({
+        ProductNumber: this.product.ProductID,
+      })
+        .then(() => appLoader.hide());
     },
   },
 };
