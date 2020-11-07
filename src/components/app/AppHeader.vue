@@ -102,8 +102,9 @@
                 <a href="/favorites" class="hr-w-ic-like">
                   <img src="@/assets/images/like.svg" alt="избранные" />
                 </a>
-                <a href="#" class="hr-w-ic-cart">
+                <a href="#" class="header-cart hr-w-ic-cart">
                   <img src="@/assets/images/cart.svg" alt="корзина" />
+                  <span v-if="cartCount" class="header-cart__counter">{{ cartCount }}</span>
                 </a>
                 <a href="/personal-cabinet" class="hr-w-ic-login">
                   <img src="@/assets/images/user.svg" alt="пользователь" />
@@ -226,6 +227,7 @@
 
 <script>
 import axios from 'axios';
+import { mapState } from 'vuex';
 
 export default {
   name: 'AppHeader',
@@ -233,6 +235,13 @@ export default {
     return {
       categories: null,
     };
+  },
+  computed: {
+    ...mapState(['cart']),
+    cartCount() {
+      const realCount = this.cart && this.cart.length;
+      return Math.min(realCount, 99);
+    },
   },
   mounted() {
     axios.get('https://api.m-lombard.kz/getFilters')
