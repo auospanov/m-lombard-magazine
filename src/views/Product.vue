@@ -58,11 +58,11 @@
               </div>
 
               <div class="product-add-to-cart-wrap">
-                <button class="product-add-to-cart e-button" @click="addItemCart" :disabled="isExistInCart" >
+                <button class="product-add-to-cart e-button" @click="addCartItem" :disabled="isExistInCart" >
                   <span v-if="isExistInCart">Товар в корзине</span>
                   <span v-if="!isExistInCart">Добавить в корзину</span>
                 </button>
-                <button v-if="isExistInCart" class="product-add-to-cart e-button" @click="removeItemCart">
+                <button v-if="isExistInCart" class="product-add-to-cart e-button" @click="removeCartItem">
                   Удалить из корзины
                 </button>
                 <div class="product-add-to-chosen">
@@ -219,7 +219,7 @@ export default {
           appLoader.hide();
         });
     },
-    addItemCart() {
+    addCartItem() {
       appLoader.show();
 
       this.ADD_CART_ITEM({
@@ -228,7 +228,7 @@ export default {
       })
         .then(() => appLoader.hide());
     },
-    removeItemCart() {
+    removeCartItem() {
       appLoader.show();
 
       this.REMOVE_CART_ITEM({
