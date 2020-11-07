@@ -1,0 +1,3 @@
+export const ACTION_TYPES = {
+  INIT_CUSTOMER_ID: 'INIT_CUSTOMER_ID',
+};

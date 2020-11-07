@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 
 import AppHeader from './components/app/AppHeader';
 import AppFooter from './components/app/AppFooter';
@@ -17,5 +18,9 @@ export default {
     AppHeader,
     AppFooter,
   },
+  mounted() {
+    this.INIT_CUSTOMER_ID();
+  },
+  methods: mapActions(['INIT_CUSTOMER_ID']),
 };
 </script>
