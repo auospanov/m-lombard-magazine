@@ -129,39 +129,36 @@
 </template>
 
 <script>
-/* eslint-disable */
+// modal slider
+function openModal() {
+  document.getElementById('myModall').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('myModall').style.display = 'none';
+}
+
+function selectImg(e) {
+  const expandImg = document.getElementById('expandedImg');
+  const expandImgModal = document.getElementById('expandImgModal');
+  expandImg.src = e.target.src;
+  expandImgModal.src = e.target.src;
+  expandImg.parentElement.style.display = 'block';
+}
+// modal gallery
 
 export default {
   name: 'Product',
   mounted() {
     document.querySelector('.js-open-product-modal').addEventListener('click', openModal);
 
-    document.querySelectorAll('.js-close-product-modal').forEach(closeModalEl => {
+    document.querySelectorAll('.js-close-product-modal').forEach((closeModalEl) => {
       closeModalEl.addEventListener('click', closeModal);
     });
 
-    document.querySelectorAll('.js-select-product-image').forEach(imageEl => {
+    document.querySelectorAll('.js-select-product-image').forEach((imageEl) => {
       imageEl.addEventListener('click', selectImg);
     });
-  }
+  },
 };
-
-// modal slider
-function openModal() {
-  document.getElementById('myModall').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModall').style.display = "none";
-}
-
-function selectImg(e) {
-  var expandImg = document.getElementById("expandedImg");
-  var expandImgModal = document.getElementById("expandImgModal");
-  expandImg.src = e.target.src;
-  expandImgModal.src = e.target.src;
-  expandImg.parentElement.style.display = "block";
-
-}
-// modal gallery
 </script>
