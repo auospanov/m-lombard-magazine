@@ -10,9 +10,9 @@
           <div class="fav-item-wrap">
             <div class="fav-item-sale-percent">-40%</div>
             <div class="fav-item-heart-wrap">
-              <div class="fav-item-heart-a-wrap">
+              <button class="fav-item-heart-btn-wrap">
                 <i class="far fa-heart" onclick="myFunction(this)"></i>
-              </div>
+              </button>
             </div>
             <router-link :to="`/product/${product.ProductID}`" class="fav-item-a-wrap">
               <div class="fav-item-goods-img-wrap">

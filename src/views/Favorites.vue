@@ -23,9 +23,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-40%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -49,9 +49,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-50%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -75,9 +75,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-10%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -101,9 +101,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-20%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -127,9 +127,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent"></div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -151,9 +151,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent"></div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -177,9 +177,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-50%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -203,9 +203,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent">-40%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -229,9 +229,9 @@
             <div class="fav-item-wrap">
               <div class="fav-item-sale-percent"></div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
@@ -253,9 +253,9 @@
             <div class="fav-item-wrap anymore-chosen">
               <div class="fav-item-sale-percent">-40%</div>
               <div class="fav-item-heart-wrap">
-                <div class="fav-item-heart-a-wrap">
+                <button class="fav-item-heart-btn-wrap">
                   <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </div>
+                </button>
               </div>
               <a href="" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">

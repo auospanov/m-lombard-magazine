@@ -643,8 +643,13 @@ p.fav-head-p {
     display: inline-block;
     float: right;
 }
-.fav-item-heart-a-wrap {
-    cursor: pointer;
+.fav-item-heart-btn-wrap {
+    appearance: none;
+    background: none;
+    border: none;
+}
+.fav-item-heart-btn-wrap:focus {
+    outline: none;
 }
 img.fav-item-heart-img {
     width: 24px;
