@@ -10,8 +10,11 @@
           <div class="fav-item-wrap">
             <div class="fav-item-sale-percent">-40%</div>
             <div class="fav-item-heart-wrap">
-              <button class="fav-item-heart-btn-wrap">
-                <i class="far fa-heart" onclick="myFunction(this)"></i>
+              <button
+                class="fav-item-heart-btn-wrap"
+                @click="toggleWishListItem(product.ProductID)"
+              >
+                <i class="far fa-heart" :class="{ 'fas': product.AtWishList }"></i>
               </button>
             </div>
             <router-link :to="`/product/${product.ProductID}`" class="fav-item-a-wrap">
@@ -48,6 +51,9 @@ export default {
   },
   methods: {
     prettyPrice,
+    toggleWishListItem(productId) {
+      this.$emit('toggleWishListItem', productId);
+    },
   },
 };
 </script>

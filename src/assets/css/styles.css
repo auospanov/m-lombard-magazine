@@ -62,9 +62,11 @@ header {
     width: 100%;
     top: 0;
 }
+.header-favorites,
 .header-cart {
     position: relative;
 }
+.header-favorites__counter,
 .header-cart__counter {
     position: absolute;
     right: -50%;
@@ -704,7 +706,10 @@ h2.fav-item-h2 {
 .anymore-chosen {
     opacity: 0.5;
 }
-.fav-item-heart-a-wrap i {
+/* .fav-item-heart-btn-wrap:focus i {
+    color: red;
+} */
+.fav-item-heart-btn-wrap i {
     font-size: 20px;
     color: rgb(255,237,0);
 }

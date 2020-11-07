@@ -13,7 +13,7 @@
     </section>
     <ProductKinds v-if="productKinds" :category-id="this.id" :product-kinds="productKinds" />
     <ProductFilter v-if="products.length" :products="products" />
-    <Products v-if="products.length" :products="products" />
+    <Products v-if="products.length" :products="products" @toggleWishListItem="toggleWishListItem" />
     <infinite-loading @infinite="setProducts">
       <div slot="no-more"></div>
       <div slot="no-results">В данной категории нет товаров</div>
@@ -23,6 +23,7 @@
 
 <script>
 import axios from 'axios';
+import { mapActions } from 'vuex';
 import InfiniteLoading from 'vue-infinite-loading';
 
 import ProductKinds from '@/components/category/ProductKinds';
@@ -58,6 +59,7 @@ export default {
     this.setCategoryInfo();
   },
   methods: {
+    ...mapActions(['ADD_WISH_LIST_ITEM', 'REMOVE_WISH_LIST_ITEM']),
     setCategoryInfo() {
       axios.get('https://api.m-lombard.kz/getFilters')
         .then((res) => {
@@ -94,6 +96,16 @@ export default {
             $state.complete();
           }
         });
+    },
+    toggleWishListItem(productId) {
+      const targetProduct = this.products.find((product) => product.ProductID === productId);
+      targetProduct.AtWishList = !targetProduct.AtWishList;
+
+      if (targetProduct.AtWishList) {
+        this.ADD_WISH_LIST_ITEM(productId);
+      } else {
+        this.REMOVE_WISH_LIST_ITEM(productId);
+      }
     },
   },
 };

@@ -99,9 +99,10 @@
                 <a href="#" class="hr-w-ic-search">
                   <img src="@/assets/images/search.svg" alt="поиск" />
                 </a>
-                <a href="/favorites" class="hr-w-ic-like">
+                <router-link to="/favorites" class="header-favorites hr-w-ic-like">
                   <img src="@/assets/images/like.svg" alt="избранные" />
-                </a>
+                  <span v-if="wishListCount" class="header-favorites__counter">{{ wishListCount }}</span>
+                </router-link>
                 <router-link to="/cart" class="header-cart hr-w-ic-cart">
                   <img src="@/assets/images/cart.svg" alt="корзина" />
                   <span v-if="cartCount" class="header-cart__counter">{{ cartCount }}</span>
@@ -237,9 +238,13 @@ export default {
     };
   },
   computed: {
-    ...mapState(['cart']),
+    ...mapState(['cart', 'wishList']),
     cartCount() {
       const realCount = this.cart && this.cart.length;
+      return Math.min(realCount, 99);
+    },
+    wishListCount() {
+      const realCount = this.wishList && this.wishList.length;
       return Math.min(realCount, 99);
     },
   },
