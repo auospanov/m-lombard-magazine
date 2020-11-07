@@ -14,15 +14,15 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'max-len': 0,
-    "import/extensions": [
-      "error",
-      "ignorePackages",
+    'import/extensions': [
+      'error',
+      'ignorePackages',
       {
-        "js": "never",
-        "jsx": "never",
-        "vue": "never"
-      }
-   ],
-   "import/prefer-default-export": "off",
+        js: 'never',
+        jsx: 'never',
+        vue: 'never',
+      },
+    ],
+    'import/prefer-default-export': 'off',
   },
 };
