@@ -5,7 +5,12 @@
         <div class="row">
           <div class="col-md-12">
             <div class="fav-head-wrap">
-              <h1 class="h1">У вас 3 товарa в избранном</h1>
+              <h1 class="h1">
+                У вас
+                {{ wishListCount }}
+                {{ pluralize(wishListCount, ['товар', 'товара', 'товаров']) }}
+                в избранном
+              </h1>
               <p class="fav-head-p">
                 Здесь хранятся все товары, которые вы отметили сердечком в
                 каталоге или на странице товара
@@ -19,260 +24,38 @@
     <section class="fav-body-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent">-40%</div>
+          <div
+            v-for="wishListItem in localWishList"
+            :key="wishListItem.ProductID"
+            class="col-md-2 col-lg-2 col-sm-6 col-6"
+          >
+            <div class="fav-item-wrap" :class="{'anymore-chosen' : !wishListItem.AtWishList}">
+              <!-- <div class="fav-item-sale-percent">-40%</div> -->
               <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
+                <button class="fav-item-heart-btn-wrap" @click="toggleWishListItem(wishListItem.ProductID)">
+                  <i
+                    class="fa-heart far"
+                    :class="{'fas' : wishListItem.AtWishList}"
+                  >
+                  </i>
                 </button>
               </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/accessories-4.jpeg"
-                    alt="Цепочка, плетение Бисмарк, из серебра"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">от 11 805 тг</span>
-                  <strike class="fav-item-price-old">17 610 тг</strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  Цепочка, плетение Бисмарк, из серебра
-                </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent">-50%</div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/earring-3.jpeg"
-                    alt="Серьги TALANT из золота с изумрудами и бриллиантами"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">40 500 тг</span>
-                  <strike class="fav-item-price-old">81 000 тг</strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  Серьги TALANT из золота с изумрудами и бриллиантами
-                </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent">-10%</div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
+              <router-link :to="`/product/${wishListItem.ProductID}`" class="fav-item-a-wrap">
                 <div class="fav-item-goods-img-wrap">
                   <img
                     src="@/assets/images/ring-1.jpeg"
-                    alt="Кольцо обручальное"
+                    :alt="wishListItem.ProductName"
                     class="fav-item-goods-img"
                   />
                 </div>
                 <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">от 25 320 тг</span>
-                  <strike class="fav-item-price-old">29 809 тг</strike>
+                  <span class="fav-item-price-actual">от {{ prettyPrice(wishListItem.Price) }} тг</span>
+                  <!-- <strike class="fav-item-price-old">17 610 тг</strike> -->
                 </div>
                 <h2 class="fav-item-h2">
-                  Кольцо обручальное гладкое из золота, 2 мм
+                  {{ wishListItem.ProductName }}
                 </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent">-20%</div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/accessories-3.jpeg"
-                    alt="Браслет, плетение Ромб тройной, из золота"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">от 36 100 тг</span>
-                  <strike class="fav-item-price-old">41 900 тг</strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  Браслет, плетение Ромб тройной, из золота
-                </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent"></div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/earring-2.jpeg"
-                    alt="Серьги-пусеты с фианитом из серебра"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">4 900 тг</span>
-                  <strike class="fav-item-price-old"></strike>
-                </div>
-                <h2 class="fav-item-h2">Серьги-пусеты с фианитом из серебра</h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent"></div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/watch-1.jpeg"
-                    alt="Часы наручные Talant"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">13 665 тг</span>
-                  <strike class="fav-item-price-old"></strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  Часы наручные Talant 122.03.01.13.05
-                </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent">-50%</div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/earring-1.jpeg"
-                    alt="Серьга-пусета из золота с бриллиантом"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">21 608 тг</span>
-                  <strike class="fav-item-price-old">43 216 тг</strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  Серьга-пусета из золота с бриллиантом
-                </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent">-40%</div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/accessories-2.jpeg"
-                    alt="Подвеска TALANT из золота с фианитом"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">9 999 тг</span>
-                  <strike class="fav-item-price-old">15 200 тг</strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  Подвеска TALANT из золота с фианитом
-                </h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap">
-              <div class="fav-item-sale-percent"></div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/silver-1.jpeg"
-                    alt="Подвеска из серебра с фианитом"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">3600 тг</span>
-                  <strike class="fav-item-price-old"></strike>
-                </div>
-                <h2 class="fav-item-h2">Подвеска из серебра с фианитом</h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-sm-6 col-6">
-            <div class="fav-item-wrap anymore-chosen">
-              <div class="fav-item-sale-percent">-40%</div>
-              <div class="fav-item-heart-wrap">
-                <button class="fav-item-heart-btn-wrap">
-                  <i class="fas fa-heart far" onclick="myFunction2(this)"></i>
-                </button>
-              </div>
-              <a href="" class="fav-item-a-wrap">
-                <div class="fav-item-goods-img-wrap">
-                  <img
-                    src="@/assets/images/accessories-1.jpeg"
-                    alt="Зажим для галстука из серебра"
-                    class="fav-item-goods-img"
-                  />
-                </div>
-                <div class="fav-item-price-wrap">
-                  <span class="fav-item-price-actual">от 12 858 тг</span>
-                  <strike class="fav-item-price-old">18 699 тг</strike>
-                </div>
-                <h2 class="fav-item-h2">
-                  При клике на сердце больше не избранное
-                </h2>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -282,7 +65,42 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import { prettyPrice, pluralize } from '@shared/utils/text';
+
+function enrichWithAtWishList(wishList) {
+  return wishList.map((wishListItem) => ({
+    ...wishListItem,
+    AtWishList: true,
+  }));
+}
+
 export default {
   name: 'Favorites',
+  data() {
+    return {
+      localWishList: enrichWithAtWishList(this.$store.state.wishList || []),
+    };
+  },
+  computed: {
+    wishListCount() {
+      return this.localWishList.filter((product) => product.AtWishList).length;
+    },
+  },
+  methods: {
+    ...mapActions(['ADD_WISH_LIST_ITEM', 'REMOVE_WISH_LIST_ITEM']),
+    prettyPrice,
+    pluralize,
+    toggleWishListItem(productId) {
+      const targetProduct = this.localWishList.find((product) => product.ProductID === productId);
+      targetProduct.AtWishList = !targetProduct.AtWishList;
+
+      if (targetProduct.AtWishList) {
+        this.ADD_WISH_LIST_ITEM(productId);
+      } else {
+        this.REMOVE_WISH_LIST_ITEM(productId);
+      }
+    },
+  },
 };
 </script>
