@@ -70,8 +70,10 @@ export default {
     },
     setProducts($state) {
       axios.post('https://api.m-lombard.kz/getProducts', {
-        lowPrice: null,
-        highPrice: null,
+        CustomerIIN: '',
+        CustomerID: '1',
+        lowPrice: 0,
+        highPrice: 0,
         page: this.page,
         count: 12,
         sort: null,
@@ -84,7 +86,7 @@ export default {
         ChainSizeFilter: [],
       })
         .then((res) => {
-          if (res.data.Products) {
+          if (res.data.Products && res.data.Products.length !== 0) {
             this.page += 1;
             this.products.push(...res.data.Products);
             $state.loaded();
