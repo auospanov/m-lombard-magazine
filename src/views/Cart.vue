@@ -16,18 +16,18 @@
             <h2 class="cart-sutitle">Товары доступные для заказа</h2>
           </div>
           <div v-for="cartItem in cart" :key="cartItem.ProductID" class="cart-items-wrap">
-            <a href="" class="cart-item-img">
+            <router-link :to="`/product/${cartItem.ProductID}`" class="cart-item-img">
               <img
                 src="@/assets/images/ring-1.jpeg"
                 alt="Часы наручные Talant 122.03.01.13.05"
                 class="cart-item-img"
               />
-            </a>
+            </router-link>
             <div class="cart-item-art-n-name-wrap">
               <div class="cart-item-art">Арт. {{ cartItem.ProductID }}</div>
-              <a href="" class="cart-item-name">
+              <router-link :to="`/product/${cartItem.ProductID}`" class="cart-item-name">
                 {{ cartItem.ProductName }}
-              </a>
+              </router-link>
             </div>
             <div class="cart-item-price">{{ prettyPrice(cartItem.Price) }} тг.</div>
             <div class="cart-item-delete">
