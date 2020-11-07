@@ -42,17 +42,21 @@
             <div class="cart-sidebar">
               <h4 class="cart-title">Стоимость заказа</h4>
               <div class="cart-sidebar-price-wrap">
-                <span class="cart-sidebar-preprice"> Цена за 2 товарa </span>
-                <span class="cart-sidebar-preprice-2"> 68 900 тг </span>
+                <span class="cart-sidebar-preprice">
+                  Цена за
+                  {{ cartCount }}
+                  {{ pluralize(cartCount, ['товар', 'товара', 'товара']) }}
+                </span>
+                <span class="cart-sidebar-preprice-2"> {{ prettyPrice(cartTotal) }} тг </span>
               </div>
-              <div class="cart-sidebar-discount-wrap">
+              <!-- <div class="cart-sidebar-discount-wrap">
                 <span class="cart-sidebar-prediscount"> Скидка на товары </span>
                 <span class="cart-sidebar-prediscount-2"> -18 900 тг </span>
-              </div>
+              </div> -->
               <hr />
               <div class="cart-sidebar-full-cost">
                 <span class="cart-sidebar-precost"> Итого </span>
-                <span class="cart-sidebar-precost-2"> 50 000 тг </span>
+                <span class="cart-sidebar-precost-2"> {{ prettyPrice(cartTotal) }} тг </span>
               </div>
               <button class="cart-siebar-order e-button">Оформить заказ</button>
               <div class="cart-sidebar-order-wrap">
@@ -78,6 +82,10 @@ export default {
     ...mapState(['cart']),
     cartCount() {
       return this.cart && this.cart.length;
+    },
+    cartTotal() {
+      return this.cart
+        && this.cart.reduce((acc, cartItem) => acc + cartItem.Price, 0);
     },
   },
   methods: {
