@@ -5,7 +5,6 @@ import Home from '../views/Home';
 import Category from '../views/Category';
 import Product from '../views/Product';
 import AboutCompany from '../views/AboutCompany';
-import CartEmpty from '../views/CartEmpty';
 import Cart from '../views/Cart';
 import Contacts from '../views/Contacts';
 import DeliveryPayment from '../views/DeliveryPayment';
@@ -53,12 +52,6 @@ const routes = [
     name: 'AboutCompany',
     component: AboutCompany,
     meta: { title: 'М-Ломбард - О компании' },
-  },
-  {
-    path: '/cart-empty',
-    name: 'CartEmpty',
-    component: CartEmpty,
-    meta: { title: 'М-Ломбард - Корзина' },
   },
   {
     path: '/cart',
