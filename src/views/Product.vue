@@ -9,21 +9,24 @@
                 <img
                   src="@/assets/images/ring-1.jpeg"
                   alt=""
-                  class="my js-select-product-image"
+                  class="my"
+                  @click="selectImg"
                 />
               </div>
               <div class="column">
                 <img
                   src="@/assets/images/silver-1.jpeg"
                   alt=""
-                  class="my js-select-product-image"
+                  class="my"
+                  @click="selectImg"
                 />
               </div>
               <div class="column">
                 <img
                   src="@/assets/images/watch-1.jpeg"
                   alt=""
-                  class="my js-select-product-image"
+                  class="my"
+                  @click="selectImg"
                 />
               </div>
             </div>
@@ -34,14 +37,15 @@
                 src="@/assets/images/ring-1.jpeg"
                 id="expandedImg"
                 style="width: 100%"
-                class="product-main-img js-open-product-modal"
+                class="product-main-img js"
+                @click="openModal"
               />
             </div>
           </div>
 
           <!-- <div class="col-md-5">
             <div class="product-img-wrap">
-              <img src="@/assets/images/ring-1.jpeg" alt="Золотые кольца" class="product-main-img js-open-product-modal">
+              <img src="@/assets/images/ring-1.jpeg" alt="Золотые кольца" class="product-main-img">
             </div>
           </div> -->
 
@@ -121,10 +125,10 @@
       </div>
     </section>
     <div id="myModall" class="modall">
-      <span class="close cursor js-close-product-modal">&times;</span>
+      <span class="close cursor" @click="closeModal">&times;</span>
       <div class="modall-content">
 
-        <div class="mySlides js-close-product-modal">
+        <div class="mySlides" @click="closeModal">
           <img src="@/assets/images/ring-1.jpeg" id="expandImgModal" class="full-img">
         </div>
       </div>
@@ -138,24 +142,6 @@ import { mapState, mapActions } from 'vuex';
 
 import { prettyPrice } from '@shared/utils/text';
 import { appLoader } from '@shared/utils/app-loader';
-
-// modal slider
-function openModal() {
-  document.getElementById('myModall').style.display = 'block';
-}
-
-function closeModal() {
-  document.getElementById('myModall').style.display = 'none';
-}
-
-function selectImg(e) {
-  const expandImg = document.getElementById('expandedImg');
-  const expandImgModal = document.getElementById('expandImgModal');
-  expandImg.src = e.target.src;
-  expandImgModal.src = e.target.src;
-  expandImg.parentElement.style.display = 'block';
-}
-// modal gallery
 
 export default {
   name: 'Product',
@@ -178,29 +164,23 @@ export default {
   },
   mounted() {
     this.fetchProduct();
-
-    const openModalEl = document.querySelector('.js-open-product-modal');
-    const cloadModalEls = document.querySelector('.js-open-product-modal');
-
-    if (openModalEl && cloadModalEls && cloadModalEls.length > 0) {
-      document.querySelector('.js-open-product-modal').addEventListener('click', openModal);
-
-      document.querySelectorAll('.js-close-product-modal').forEach((closeModalEl) => {
-        closeModalEl.addEventListener('click', closeModal);
-      });
-    }
-
-    const selectProductImageEls = document.querySelectorAll('.js-select-product-image');
-
-    if (selectProductImageEls && selectProductImageEls.length > 0) {
-      document.querySelectorAll('.js-select-product-image').forEach((imageEl) => {
-        imageEl.addEventListener('click', selectImg);
-      });
-    }
   },
   methods: {
     ...mapActions(['ADD_CART_ITEM', 'REMOVE_CART_ITEM']),
     prettyPrice,
+    openModal() {
+      document.getElementById('myModall').style.display = 'block';
+    },
+    closeModal() {
+      document.getElementById('myModall').style.display = 'none';
+    },
+    selectImg(e) {
+      const expandImg = document.getElementById('expandedImg');
+      const expandImgModal = document.getElementById('expandImgModal');
+      expandImg.src = e.target.src;
+      expandImgModal.src = e.target.src;
+      expandImg.parentElement.style.display = 'block';
+    },
     fetchProduct() {
       appLoader.show();
 
