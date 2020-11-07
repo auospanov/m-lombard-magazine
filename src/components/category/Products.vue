@@ -23,8 +23,8 @@
                 />
               </div>
               <div class="fav-item-price-wrap">
-                <span class="fav-item-price-actual">от 11 805 тг</span>
-                <strike class="fav-item-price-old">17 610 тг</strike>
+                <span class="fav-item-price-actual">от {{ prettyPrice(product.Price) }} тг</span>
+                <!-- <strike class="fav-item-price-old">17 610 тг</strike> -->
               </div>
               <h2 class="fav-item-h2">{{ product.Product }}</h2>
             </a>
@@ -36,6 +36,8 @@
 </template>
 
 <script>
+import { prettyPrice } from '@shared/utils/text';
+
 export default {
   name: 'Products',
   props: {
@@ -43,6 +45,9 @@ export default {
       type: Array,
       required: true,
     },
+  },
+  methods: {
+    prettyPrice,
   },
 };
 </script>
