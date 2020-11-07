@@ -1306,26 +1306,19 @@ a.cart-item-name:hover {
     border: none;
 }
 .cart-item-img { 
-    flex-grow: 1; 
     flex-basis: 55px; 
 }
 .cart-item-art-n-name-wrap { 
-    flex-grow: 3; 
+    flex-grow: 1; 
 }
 .cart-item-quantity-wrap { 
-    flex-grow: 1; 
     text-align: center;
 }
 .cart-item-size { 
-    flex-grow: 2; 
     text-align: center;
 }
 .cart-item-price { 
-    flex-grow: 1; 
     text-align: center;
-}
-.cart-item-delete { 
-    flex-grow: 1; 
 }
 .cart-item-delete-btn-wrap {
     background: none;
