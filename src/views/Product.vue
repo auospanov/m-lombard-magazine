@@ -54,31 +54,9 @@
               <h1 class="h1">Кольцо обручальное гладкое из золота, 2 мм</h1>
               <div class="product-price-wrap">
                 <div class="product-price">31 150 тг</div>
-                <strike class="product-old-price">43 500 тг</strike>
+                <!-- <strike class="product-old-price">43 500 тг</strike> -->
               </div>
-              <div class="product-online-price">
-                <i class="fas fa-credit-card"></i>
-                Цена при оплате онлайн 2 993 ₽
-              </div>
-              <div class="product-choice-size-wrap">
-                <div class="product-choice-size">Выбрать размер</div>
-                <div id="product-sizes-wrap">
-                  <button class="btn-size">15.5</button>
-                  <button class="btn-size active-size">16</button>
-                  <button class="btn-size">16.5</button>
-                  <button class="btn-size">17</button>
-                  <button class="btn-size">17.5</button>
-                  <button class="btn-size">18</button>
-                  <button class="btn-size">18.5</button>
-                  <button class="btn-size">19</button>
-                  <button class="btn-size">19.5</button>
-                  <button class="btn-size">20</button>
-                  <button class="btn-size">20.5</button>
-                  <button class="btn-size">21</button>
-                  <button class="btn-size">21.5</button>
-                  <button class="btn-size">22</button>
-                </div>
-              </div>
+
               <div class="product-add-to-cart-wrap">
                 <button class="product-add-to-cart e-button">
                   Добавить в корзину
@@ -90,22 +68,6 @@
                     aria-hidden="true"
                   ></i>
                 </div>
-              </div>
-              <div class="product-in-stock-in-shops">
-                <a href="#" class="product-in-stock-in-shops-a">
-                  В наличии в 14 магазинах
-                </a>
-              </div>
-              <div class="detailed-description-wrap">
-                <p class="detailed-description-title">Подробное описание</p>
-                <p class="description-line-title">Вставки</p>
-                <p class="description-line-char">Без вставки</p>
-                <p class="description-line-title">Материалы</p>
-                <p class="description-line-char">
-                  Золото, проба 375, вес от 1.05 гр
-                </p>
-                <p class="description-line-title">Описание материалов</p>
-                <p class="description-line-char">Золото 375 пробы</p>
               </div>
               <div class="product-buy-advantages-wrapper">
                 <div class="product-buy-advantages-wrap">
@@ -170,19 +132,8 @@
 /* eslint-disable */
 
 export default {
-  name: 'Product2',
+  name: 'Product',
   mounted() {
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("product-sizes-wrap");
-    var btns = header.getElementsByClassName("btn-size");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active-size");
-      current[0].className = current[0].className.replace(" active-size", "");
-      this.className += " active-size";
-      });
-    }
-
     document.querySelector('.js-open-product-modal').addEventListener('click', openModal);
 
     document.querySelectorAll('.js-close-product-modal').forEach(closeModalEl => {

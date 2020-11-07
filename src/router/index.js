@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Home from '../views/Home';
 import Category from '../views/Category';
+import Product from '../views/Product';
 import AboutCompany from '../views/AboutCompany';
 import CartEmpty from '../views/CartEmpty';
 import Cart from '../views/Cart';
@@ -13,7 +14,6 @@ import FavoritesEmpty from '../views/FavoritesEmpty';
 import Favorites from '../views/Favorites';
 import PersonalCabinet from '../views/PersonalCabinet';
 import Product1 from '../views/Product1';
-import Product2 from '../views/Product2';
 import ReturnExchange from '../views/ReturnExchange';
 import Shops from '../views/Shops';
 
@@ -39,6 +39,12 @@ const routes = [
     component: Category,
     props: true,
     meta: { title: 'М-Ломбард - Товары' },
+  },
+  {
+    path: '/product/:id',
+    name: 'Product',
+    component: Product,
+    meta: { title: 'М-Ломбард - Товар' },
   },
   {
     path: '/about-company',
@@ -98,12 +104,6 @@ const routes = [
     path: '/product-1',
     name: 'Product1',
     component: Product1,
-    meta: { title: 'М-Ломбард - Товар' },
-  },
-  {
-    path: '/product-2',
-    name: 'Product2',
-    component: Product2,
     meta: { title: 'М-Ломбард - Товар' },
   },
   {

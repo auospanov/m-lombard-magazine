@@ -14,7 +14,7 @@
                 <i class="far fa-heart" onclick="myFunction(this)"></i>
               </div>
             </div>
-            <a href="/product-2" class="fav-item-a-wrap">
+            <router-link :to="`/product/${product.ProductID}`" class="fav-item-a-wrap">
               <div class="fav-item-goods-img-wrap">
                 <img
                   src="@/assets/images/ring-1.jpeg"
@@ -27,7 +27,7 @@
                 <!-- <strike class="fav-item-price-old">17 610 тг</strike> -->
               </div>
               <h2 class="fav-item-h2">{{ product.Product }}</h2>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
