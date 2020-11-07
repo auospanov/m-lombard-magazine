@@ -10,12 +10,12 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    customerId: localStorage.getItem('app_customerId') || null,
+    customerId: localStorage.getItem('app_customer_id') || null,
     cart: JSON.parse(localStorage.getItem('app_cart')) || null,
   },
   mutations: {
     [MUTATION_TYPES.SET_CUSTOMER_ID](state, payload) {
-      localStorage.setItem('app_customerId', payload);
+      localStorage.setItem('app_customer_id', payload);
       state.customerId = payload;
     },
     [MUTATION_TYPES.SET_CART](state, payload) {
