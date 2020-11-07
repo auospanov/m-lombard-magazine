@@ -31,7 +31,7 @@
             </div>
             <div class="cart-item-price">{{ prettyPrice(cartItem.Price) }} тг.</div>
             <div class="cart-item-delete">
-              <button class="cart-item-delete-btn-wrap">
+              <button class="cart-item-delete-btn-wrap" @click="removeCartItem(cartItem.ProductID)">
                 <i class="fas fa-times"></i>
               </button>
             </div>
@@ -72,8 +72,9 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 
+import { appLoader } from '@shared/utils/app-loader';
 import { prettyPrice, pluralize } from '@shared/utils/text';
 
 export default {
@@ -89,8 +90,17 @@ export default {
     },
   },
   methods: {
+    ...mapActions(['REMOVE_CART_ITEM']),
     prettyPrice,
     pluralize,
+    removeCartItem(productId) {
+      appLoader.show();
+
+      this.REMOVE_CART_ITEM({
+        ProductNumber: productId,
+      })
+        .then(() => appLoader.hide());
+    },
   },
 };
 </script>
