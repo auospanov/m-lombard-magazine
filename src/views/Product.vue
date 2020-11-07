@@ -173,7 +173,7 @@ export default {
   computed: {
     ...mapState(['cart']),
     isExistInCart() {
-      return this.cart.some((cartItem) => cartItem.ProductID === this.product.ProductID);
+      return this.cart && this.cart.some((cartItem) => cartItem.ProductID === this.product.ProductID);
     },
   },
   mounted() {
