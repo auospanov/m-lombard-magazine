@@ -194,6 +194,11 @@ export default {
         ProductID: this.id,
       })
         .then((res) => {
+          if (res.data.AnswerCode !== 200) {
+            this.$router.push({ name: 'PageNotFound' });
+            return;
+          }
+
           this.product = res.data.Product;
         });
     },
