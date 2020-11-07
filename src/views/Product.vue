@@ -1,5 +1,5 @@
 <template>
-  <div class="product-page">
+  <div v-if="product" class="product-page">
     <section class="product-section">
       <div class="container">
         <div class="row">
@@ -48,12 +48,12 @@
           <div class="col-md-5">
             <div class="product-wrap">
               <div class="product-first-line-wrap">
-                <div class="product-article">Артикул: 8047696</div>
-                <div class="product-sale-percent">-30%</div>
+                <div class="product-article">Артикул: {{ product.ProductID }}</div>
+                <!-- <div class="product-sale-percent">-30%</div> -->
               </div>
-              <h1 class="h1">Кольцо обручальное гладкое из золота, 2 мм</h1>
+              <h1 class="h1">{{ product.Product }}</h1>
               <div class="product-price-wrap">
-                <div class="product-price">31 150 тг</div>
+                <div class="product-price">{{ prettyPrice(product.Price) }} тг</div>
                 <!-- <strike class="product-old-price">43 500 тг</strike> -->
               </div>
 
@@ -129,6 +129,9 @@
 </template>
 
 <script>
+import axios from 'axios';
+import { prettyPrice } from '@shared/utils/text';
+
 // modal slider
 function openModal() {
   document.getElementById('myModall').style.display = 'block';
@@ -149,16 +152,51 @@ function selectImg(e) {
 
 export default {
   name: 'Product',
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      product: null,
+    };
+  },
   mounted() {
-    document.querySelector('.js-open-product-modal').addEventListener('click', openModal);
+    this.fetchProduct();
 
-    document.querySelectorAll('.js-close-product-modal').forEach((closeModalEl) => {
-      closeModalEl.addEventListener('click', closeModal);
-    });
+    const openModalEl = document.querySelector('.js-open-product-modal');
+    const cloadModalEls = document.querySelector('.js-open-product-modal');
 
-    document.querySelectorAll('.js-select-product-image').forEach((imageEl) => {
-      imageEl.addEventListener('click', selectImg);
-    });
+    if (openModalEl && cloadModalEls && cloadModalEls.length > 0) {
+      document.querySelector('.js-open-product-modal').addEventListener('click', openModal);
+
+      document.querySelectorAll('.js-close-product-modal').forEach((closeModalEl) => {
+        closeModalEl.addEventListener('click', closeModal);
+      });
+    }
+
+    const selectProductImageEls = document.querySelectorAll('.js-select-product-image');
+
+    if (selectProductImageEls && selectProductImageEls.length > 0) {
+      document.querySelectorAll('.js-select-product-image').forEach((imageEl) => {
+        imageEl.addEventListener('click', selectImg);
+      });
+    }
+  },
+  methods: {
+    prettyPrice,
+    fetchProduct() {
+      axios.post('https://api.m-lombard.kz/GetProductByID', {
+        CustomerIIN: '',
+        CustomerID: '1',
+        ProductID: this.id,
+      })
+        .then((res) => {
+          this.product = res.data.Product;
+        });
+    },
   },
 };
 </script>

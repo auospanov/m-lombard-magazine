@@ -44,6 +44,7 @@ const routes = [
     path: '/product/:id',
     name: 'Product',
     component: Product,
+    props: true,
     meta: { title: 'М-Ломбард - Товар' },
   },
   {
