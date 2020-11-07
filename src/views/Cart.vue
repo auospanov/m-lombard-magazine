@@ -3,7 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="cart-h1">В вашей корзине 2 товарa</h1>
+          <h1 class="cart-h1">
+            В вашей корзине
+            {{ cartCount }}
+            {{ pluralize(cartCount, ['товар', 'товара', 'товаров']) }}
+          </h1>
         </div>
       </div>
       <div class="row">
@@ -11,69 +15,25 @@
           <div class="cart-subtitle-wrap">
             <h2 class="cart-sutitle">Товары доступные для заказа</h2>
           </div>
-          <div class="cart-items-wrap">
+          <div v-for="cartItem in cart" :key="cartItem.ProductID" class="cart-items-wrap">
             <a href="" class="cart-item-img">
               <img
-                src="@/assets/images/watch-1.jpeg"
+                src="@/assets/images/ring-1.jpeg"
                 alt="Часы наручные Talant 122.03.01.13.05"
                 class="cart-item-img"
               />
             </a>
             <div class="cart-item-art-n-name-wrap">
-              <div class="cart-item-art">Арт. 4438228</div>
+              <div class="cart-item-art">Арт. {{ cartItem.ProductID }}</div>
               <a href="" class="cart-item-name">
-                Часы наручные Talant 122.03.01.13.05
+                {{ cartItem.ProductName }}
               </a>
             </div>
-            <div class="cart-item-quantity-wrap">
-              <a href="" class="cart-item-quantity-minus-wrap">
-                <i class="fas fa-minus"></i>
-              </a>
-              1 шт.
-              <a href="" class="cart-item-quantity-plus-wrap">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-            <div class="cart-item-size">Один размер</div>
-            <div class="cart-item-price">13 890 тг.</div>
+            <div class="cart-item-price">{{ prettyPrice(cartItem.Price) }} тг.</div>
             <div class="cart-item-delete">
-              <a href="" class="cart-item-delete-a-wrap">
+              <button class="cart-item-delete-btn-wrap">
                 <i class="fas fa-times"></i>
-              </a>
-            </div>
-          </div>
-          <div class="cart-items-wrap">
-            <a href="" class="cart-item-img">
-              <img
-                src="@/assets/images/earring-2.jpeg"
-                alt="Серьги из золота с бриллиантами"
-                class="cart-item-img"
-              />
-            </a>
-            <div class="cart-item-art-n-name-wrap">
-              <div class="cart-item-art">Арт. 8046042</div>
-              <a href="" class="cart-item-name">
-                Серьги из золота с бриллиантами
-              </a>
-            </div>
-            <div class="cart-item-quantity-wrap">
-              <a href="" class="cart-item-quantity-minus-wrap">
-                <i class="fas fa-minus"></i>
-              </a>
-              1 шт.
-              <a href="" class="cart-item-quantity-plus-wrap">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-            <div class="cart-item-size">Один размер</div>
-            <div class="cart-item-price">
-              43 890 тг.
-              <strike class="cart-item-discon-price"> 87 780 тг. </strike>
-            </div>
-            <div class="cart-item-delete">
-              <a href="" class="cart-item-delete-a-wrap">
-                <i class="fas fa-times"></i>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -108,7 +68,21 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
+import { prettyPrice, pluralize } from '@shared/utils/text';
+
 export default {
   name: 'Cart',
+  computed: {
+    ...mapState(['cart']),
+    cartCount() {
+      return this.cart && this.cart.length;
+    },
+  },
+  methods: {
+    prettyPrice,
+    pluralize,
+  },
 };
 </script>

@@ -1327,17 +1327,20 @@ a.cart-item-name:hover {
 .cart-item-delete { 
     flex-grow: 1; 
 }
-
-.cart-item-delete-a-wrap i {
+.cart-item-delete-btn-wrap {
+    background: none;
+    border: none;
+}
+.cart-item-delete-btn-wrap i {
     color: #cdcdcd;
     font-size: 17px;
     text-align: center;
     display: block;
 }
-.cart-item-delete-a-wrap:hover {
+.cart-item-delete-btn-wrap:hover {
     text-decoration: none;
 }
-.cart-item-delete-a-wrap:hover i {
+.cart-item-delete-btn-wrap:hover i {
     color: #999;
 }
 .cart-item-quantity-wrap a {
