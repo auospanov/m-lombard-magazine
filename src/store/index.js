@@ -11,7 +11,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     customerId: localStorage.getItem('app_customerId') || null,
-    cart: localStorage.getItem('app_cart') || null,
+    cart: JSON.parse(localStorage.getItem('app_cart')) || null,
   },
   mutations: {
     [MUTATION_TYPES.SET_CUSTOMER_ID](state, payload) {
@@ -19,7 +19,7 @@ export default new Vuex.Store({
       state.customerId = payload;
     },
     [MUTATION_TYPES.SET_CART](state, payload) {
-      localStorage.setItem('app_cart', payload);
+      localStorage.setItem('app_cart', JSON.stringify(payload));
       state.cart = payload;
     },
   },
