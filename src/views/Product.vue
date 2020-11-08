@@ -158,7 +158,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(['cart']),
+    ...mapState(['customerId', 'cart']),
     isExistInCart() {
       return this.cart && this.cart.some((cartItem) => cartItem.ProductID === this.product.ProductID);
     },
@@ -187,7 +187,7 @@ export default {
 
       axios.post('https://api.m-lombard.kz/GetProductByID', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: this.customerId,
         ProductID: this.id,
       })
         .then((res) => {

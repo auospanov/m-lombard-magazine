@@ -35,10 +35,10 @@ export default new Vuex.Store({
         commit(MUTATION_TYPES.SET_CUSTOMER_ID, customerId);
       }
     },
-    [ACTION_TYPES.INIT_CART]({ commit }) {
+    [ACTION_TYPES.INIT_CART]({ commit, state }) {
       axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: state.customerId,
         OperationType: 'info',
         Products: [],
       })
@@ -46,10 +46,10 @@ export default new Vuex.Store({
           commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
         });
     },
-    [ACTION_TYPES.ADD_CART_ITEM]({ commit }, payload) {
+    [ACTION_TYPES.ADD_CART_ITEM]({ commit, state }, payload) {
       return axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: state.customerId,
         OperationType: 'add',
         Products: [payload],
       })
@@ -59,10 +59,10 @@ export default new Vuex.Store({
           }
         });
     },
-    [ACTION_TYPES.REMOVE_CART_ITEM]({ commit }, payload) {
+    [ACTION_TYPES.REMOVE_CART_ITEM]({ commit, state }, payload) {
       return axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: state.customerId,
         OperationType: 'remove',
         Products: [payload],
       })
@@ -72,10 +72,10 @@ export default new Vuex.Store({
           }
         });
     },
-    [ACTION_TYPES.INIT_WISH_LIST]({ commit }) {
+    [ACTION_TYPES.INIT_WISH_LIST]({ commit, state }) {
       axios.post('https://api.m-lombard.kz/WishList', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: state.customerId,
         OperationType: 'info',
         Products: [],
       })
@@ -83,10 +83,10 @@ export default new Vuex.Store({
           commit(MUTATION_TYPES.SET_WISH_LIST, res.data.Products);
         });
     },
-    [ACTION_TYPES.ADD_WISH_LIST_ITEM]({ dispatch }, payload) {
+    [ACTION_TYPES.ADD_WISH_LIST_ITEM]({ dispatch, state }, payload) {
       axios.post('https://api.m-lombard.kz/WishList', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: state.customerId,
         OperationType: 'add',
         Products: [{
           ProductNumber: payload,
@@ -96,10 +96,10 @@ export default new Vuex.Store({
           dispatch(ACTION_TYPES.INIT_WISH_LIST);
         });
     },
-    [ACTION_TYPES.REMOVE_WISH_LIST_ITEM]({ dispatch }, payload) {
+    [ACTION_TYPES.REMOVE_WISH_LIST_ITEM]({ dispatch, state }, payload) {
       axios.post('https://api.m-lombard.kz/WishList', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: state.customerId,
         OperationType: 'remove',
         Products: [{
           ProductNumber: payload,

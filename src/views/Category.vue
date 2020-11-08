@@ -23,7 +23,7 @@
 
 <script>
 import axios from 'axios';
-import { mapActions } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 import InfiniteLoading from 'vue-infinite-loading';
 
 import ProductKinds from '@/components/category/ProductKinds';
@@ -55,6 +55,7 @@ export default {
       products: [],
     };
   },
+  computed: mapState(['customerId']),
   mounted() {
     this.setCategoryInfo();
   },
@@ -73,7 +74,7 @@ export default {
     setProducts($state) {
       axios.post('https://api.m-lombard.kz/getProducts', {
         CustomerIIN: '',
-        CustomerID: '1',
+        CustomerID: this.customerId,
         lowPrice: 0,
         highPrice: 0,
         page: this.page,
