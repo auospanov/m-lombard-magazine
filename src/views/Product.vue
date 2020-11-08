@@ -69,13 +69,14 @@
                 <button v-if="isExistInCart" class="product-add-to-cart e-button" @click="removeCartItem">
                   Удалить из корзины
                 </button>
-                <div class="product-add-to-chosen">
+                <!-- TODO: Get AtWihLit param from backend -->
+                <!-- <div class="product-add-to-chosen">
                   <i
                     class="far fa-heart"
                     onclick="myFunction3(this)"
                     aria-hidden="true"
                   ></i>
-                </div>
+                </div> -->
               </div>
               <div class="product-buy-advantages-wrapper">
                 <div class="product-buy-advantages-wrap">
