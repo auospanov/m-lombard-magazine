@@ -230,6 +230,8 @@
 import axios from 'axios';
 import { mapState } from 'vuex';
 
+import { appLoader } from '@shared/utils/app-loader';
+
 export default {
   name: 'AppHeader',
   data() {
@@ -249,10 +251,14 @@ export default {
     },
   },
   mounted() {
+    appLoader.show();
+
     axios.get('https://api.m-lombard.kz/getFilters')
       .then((res) => {
         this.categories = res.data.ProductCategoriesFilter;
-      });
+        appLoader.hide();
+      })
+      .catch(() => appLoader.hide());
   },
 };
 </script>
