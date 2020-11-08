@@ -88,6 +88,11 @@ export default {
       return this.localWishList.filter((product) => product.AtWishList).length;
     },
   },
+  mounted() {
+    if (this.wishListCount === 0) {
+      this.$router.replace('/favorites-empty');
+    }
+  },
   methods: {
     ...mapActions(['ADD_WISH_LIST_ITEM', 'REMOVE_WISH_LIST_ITEM']),
     prettyPrice,
