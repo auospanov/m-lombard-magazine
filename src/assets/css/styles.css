@@ -641,6 +641,10 @@ p.fav-head-p {
     color: #ff0900;
     display: inline-block;
 }
+.fav-item-sold-text {
+    font-weight: 600;
+    color: #ff0900;
+}
 .fav-item-heart-wrap {
     display: inline-block;
     float: right;

@@ -30,6 +30,7 @@
             class="col-md-2 col-lg-2 col-sm-6 col-6"
           >
             <div class="fav-item-wrap" :class="{'anymore-chosen' : !wishListItem.AtWishList}">
+              <span v-if="wishListItem.ProductSold" class="fav-item-sold-text">Продано</span>
               <!-- <div class="fav-item-sale-percent">-40%</div> -->
               <div class="fav-item-heart-wrap">
                 <button class="fav-item-heart-btn-wrap" @click="toggleWishListItem(wishListItem.ProductID)">
