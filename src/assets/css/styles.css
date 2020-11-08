@@ -1668,17 +1668,20 @@ img.delivery-payment-list-img {
         display: flex;
         justify-content: space-between;
     }
+    .hr-w-ic-search, .hr-w-ic-like {
+        margin: 0 7px 0 0;
+    }
+    .hr-w-ic-cart {
+        margin: 0;
+    }
     .hr-w-ic-search img {
         width: 20px;
-        margin: 0 7px 0 0;
     }
     .hr-w-ic-like img {
         width: 20px;
-        margin: 0 7px;
     }
     .hr-w-ic-cart img {
         width: 20px;
-        margin: 0;
     }
     .mobile-tab nav ul li a {
         padding: 10px 15px;
