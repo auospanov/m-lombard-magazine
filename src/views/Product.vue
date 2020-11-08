@@ -66,7 +66,7 @@
                   <span v-if="isExistInCart">Товар в корзине</span>
                   <span v-if="!isExistInCart">Добавить в корзину</span>
                 </button>
-                <button v-if="isExistInCart" class="product-add-to-cart e-button" @click="removeCartItem">
+                <button v-if="isExistInCart" class="product-remove-from-cart e-button" @click="removeCartItem">
                   Удалить из корзины
                 </button>
                 <!-- TODO: Get AtWihLit param from backend -->

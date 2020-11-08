@@ -979,6 +979,10 @@ button.product-add-to-cart.e-button {
     margin: 30px 15px 20px 0;
     display: inline-block;
 }
+button.product-remove-from-cart.e-button {
+    margin: 0;
+    display: inline-block;
+}
 button.product-add-to-chosen {
     padding: 14px 32px;
     font-size: 16px;
