@@ -192,7 +192,7 @@ export default {
       })
         .then((res) => {
           if (res.data.AnswerCode !== 200) {
-            this.$router.push({ name: 'PageNotFound' });
+            this.$router.replace({ name: 'PageNotFound' });
             return;
           }
 
