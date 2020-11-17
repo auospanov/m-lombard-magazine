@@ -76,10 +76,11 @@ export default {
         CustomerIIN: '',
         CustomerID: this.customerId,
         lowPrice: 0,
-        highPrice: 0,
+        highPrice: 100000, // TODO: backend error required field
         page: this.page,
         count: 12,
         sort: null,
+        ProductStateFilter: [1, 2, 3],
         ProductCategoriesFilter: [this.id],
         ProductKindsFilter: this.productKindId ? [this.productKindId] : [],
         StonesFilter: [],

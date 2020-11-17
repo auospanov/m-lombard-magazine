@@ -51,7 +51,7 @@
                   Добавить в корзину
                 </button>
                 <div class="product-add-to-chosen">
-                  <i class="far fa-heart" onclick="myFunction3(this)" aria-hidden="true"></i>
+                  <i class="far fa-heart" aria-hidden="true"></i>
                 </div>
               </div>
               <div class="product-in-stock-in-shops">

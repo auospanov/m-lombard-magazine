@@ -8,11 +8,20 @@ import { ACTION_TYPES } from './actions';
 
 Vue.use(Vuex);
 
+function getJsonFromLocalStorage(itemName, fallBack) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(itemName));
+    return parsed || fallBack;
+  } catch (err) {
+    return fallBack;
+  }
+}
+
 export default new Vuex.Store({
   state: {
     customerId: localStorage.getItem('app_customer_id') || null,
-    cart: JSON.parse(localStorage.getItem('app_cart')) || [],
-    wishList: JSON.parse(localStorage.getItem('app_wish_list')) || [],
+    cart: getJsonFromLocalStorage('app_cart', []),
+    wishList: getJsonFromLocalStorage('app_wish_list', []),
   },
   mutations: {
     [MUTATION_TYPES.SET_CUSTOMER_ID](state, payload) {
@@ -43,10 +52,10 @@ export default new Vuex.Store({
         Products: [],
       })
         .then((res) => {
-          commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
+          commit(MUTATION_TYPES.SET_CART, res.data.Products);
         });
     },
-    [ACTION_TYPES.ADD_CART_ITEM]({ commit, state }, payload) {
+    [ACTION_TYPES.ADD_CART_ITEM]({ dispatch, state }, payload) {
       return axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
         CustomerID: state.customerId,
@@ -55,11 +64,15 @@ export default new Vuex.Store({
       })
         .then((res) => {
           if (res.data.AnswerCode === 200) {
-            commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
+            dispatch(ACTION_TYPES.INIT_CART);
+          } else if (res.data.AnswerCode === 206) {
+            throw Error('Товар забронирован другим пользователем.');
+          } else {
+            throw Error('Произошла ошибка. Попробуйте позже.');
           }
         });
     },
-    [ACTION_TYPES.REMOVE_CART_ITEM]({ commit, state }, payload) {
+    [ACTION_TYPES.REMOVE_CART_ITEM]({ dispatch, state }, payload) {
       return axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
         CustomerID: state.customerId,
@@ -68,7 +81,9 @@ export default new Vuex.Store({
       })
         .then((res) => {
           if (res.data.AnswerCode === 200) {
-            commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
+            dispatch(ACTION_TYPES.INIT_CART);
+          } else {
+            throw Error('Произошла ошибка. Попробуйте позже.');
           }
         });
     },

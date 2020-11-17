@@ -114,7 +114,11 @@ export default {
       this.REMOVE_CART_ITEM({
         ProductNumber: productId,
       })
-        .then(() => appLoader.hide());
+        .then(() => appLoader.hide())
+        .catch((err) => {
+          appLoader.hide();
+          this.$toasted.show(err.message);
+        });
     },
   },
 };

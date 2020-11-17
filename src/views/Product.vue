@@ -66,17 +66,13 @@
                   <span v-if="isExistInCart">Товар в корзине</span>
                   <span v-if="!isExistInCart">Добавить в корзину</span>
                 </button>
-                <button v-if="isExistInCart" class="product-remove-from-cart e-button" @click="removeCartItem">
-                  Удалить из корзины
-                </button>
-                <!-- TODO: Get AtWihLit param from backend -->
-                <!-- <div class="product-add-to-chosen">
+                <div class="product-add-to-chosen" @click="toggleWishListItem">
                   <i
                     class="far fa-heart"
-                    onclick="myFunction3(this)"
+                    :class="{ 'fas': product.AtWishList }"
                     aria-hidden="true"
                   ></i>
-                </div> -->
+                </div>
               </div>
               <div class="product-buy-advantages-wrapper">
                 <div class="product-buy-advantages-wrap">
@@ -167,7 +163,12 @@ export default {
     this.fetchProduct();
   },
   methods: {
-    ...mapActions(['ADD_CART_ITEM', 'REMOVE_CART_ITEM']),
+    ...mapActions([
+      'ADD_CART_ITEM',
+      'REMOVE_CART_ITEM',
+      'ADD_WISH_LIST_ITEM',
+      'REMOVE_WISH_LIST_ITEM',
+    ]),
     prettyPrice,
     openModal() {
       document.getElementById('myModall').style.display = 'block';
@@ -207,15 +208,20 @@ export default {
         ProductNumber: this.product.ProductID,
         ProductPrice: this.product.Price,
       })
-        .then(() => appLoader.hide());
+        .then(() => appLoader.hide())
+        .catch((err) => {
+          appLoader.hide();
+          this.$toasted.show(err.message);
+        });
     },
-    removeCartItem() {
-      appLoader.show();
+    toggleWishListItem() {
+      this.product.AtWishList = !this.product.AtWishList;
 
-      this.REMOVE_CART_ITEM({
-        ProductNumber: this.product.ProductID,
-      })
-        .then(() => appLoader.hide());
+      if (this.product.AtWishList) {
+        this.ADD_WISH_LIST_ITEM(this.product.ProductID);
+      } else {
+        this.REMOVE_WISH_LIST_ITEM(this.product.ProductID);
+      }
     },
   },
 };
