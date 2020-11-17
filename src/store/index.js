@@ -8,11 +8,20 @@ import { ACTION_TYPES } from './actions';
 
 Vue.use(Vuex);
 
+function getJsonFromLocalStorage(itemName, fallBack) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(itemName));
+    return parsed || fallBack;
+  } catch (err) {
+    return fallBack;
+  }
+}
+
 export default new Vuex.Store({
   state: {
     customerId: localStorage.getItem('app_customer_id') || null,
-    cart: JSON.parse(localStorage.getItem('app_cart')) || [],
-    wishList: JSON.parse(localStorage.getItem('app_wish_list')) || [],
+    cart: getJsonFromLocalStorage('app_cart', []),
+    wishList: getJsonFromLocalStorage('app_wish_list', []),
   },
   mutations: {
     [MUTATION_TYPES.SET_CUSTOMER_ID](state, payload) {
