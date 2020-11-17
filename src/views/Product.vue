@@ -207,7 +207,11 @@ export default {
         ProductNumber: this.product.ProductID,
         ProductPrice: this.product.Price,
       })
-        .then(() => appLoader.hide());
+        .then(() => appLoader.hide())
+        .catch((err) => {
+          appLoader.hide();
+          this.$toasted.show(err.message);
+        });
     },
     removeCartItem() {
       appLoader.show();
@@ -215,7 +219,11 @@ export default {
       this.REMOVE_CART_ITEM({
         ProductNumber: this.product.ProductID,
       })
-        .then(() => appLoader.hide());
+        .then(() => appLoader.hide())
+        .catch((err) => {
+          appLoader.hide();
+          this.$toasted.show(err.message);
+        });
     },
   },
 };

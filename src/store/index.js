@@ -52,10 +52,10 @@ export default new Vuex.Store({
         Products: [],
       })
         .then((res) => {
-          commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
+          commit(MUTATION_TYPES.SET_CART, res.data.Products);
         });
     },
-    [ACTION_TYPES.ADD_CART_ITEM]({ commit, state }, payload) {
+    [ACTION_TYPES.ADD_CART_ITEM]({ dispatch, state }, payload) {
       return axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
         CustomerID: state.customerId,
@@ -64,11 +64,15 @@ export default new Vuex.Store({
       })
         .then((res) => {
           if (res.data.AnswerCode === 200) {
-            commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
+            dispatch(ACTION_TYPES.INIT_CART);
+          } else if (res.data.AnswerCode === 206) {
+            throw Error('Товар забронирован другим пользователем.');
+          } else {
+            throw Error('Произошла ошибка. Попробуйте позже.');
           }
         });
     },
-    [ACTION_TYPES.REMOVE_CART_ITEM]({ commit, state }, payload) {
+    [ACTION_TYPES.REMOVE_CART_ITEM]({ dispatch, state }, payload) {
       return axios.post('https://api.m-lombard.kz/basket', {
         CustomerIIN: '',
         CustomerID: state.customerId,
@@ -77,7 +81,9 @@ export default new Vuex.Store({
       })
         .then((res) => {
           if (res.data.AnswerCode === 200) {
-            commit(MUTATION_TYPES.SET_CART, res.data.ProductsInBasket);
+            dispatch(ACTION_TYPES.INIT_CART);
+          } else {
+            throw Error('Произошла ошибка. Попробуйте позже.');
           }
         });
     },
