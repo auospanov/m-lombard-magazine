@@ -66,10 +66,6 @@ header {
   width: 18px;
 }
 
-.hr-lc-a img {
-  width: 20px;
-}
-
 .hr-w-left a {
   color: #292b2c;
   padding-right: 15px;
@@ -79,17 +75,6 @@ header {
 .hr-w-left a:hover {
   color: #292b2c;
   text-decoration: none;
-}
-
-.hr-lc-a span {
-  border-bottom: 1px dashed #292b2c;
-  margin-left: 5px;
-  font-family: Museo300;
-}
-
-.hr-lc-w {
-  display: inline-block;
-  padding: 20px 0;
 }
 
 .hr-w-right {
@@ -129,45 +114,6 @@ a.hr-w-ic-cart {
 
 .hr-w-left {
   position: relative;
-}
-
-.hr-lc-dropdown {
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  padding: 20px 0 0;
-  z-index: 9;
-  top: 50px;
-  left: -88px;
-}
-
-.hr-lc-dropdown-city-name {
-  font-family: "Museo300";
-  text-align: center;
-  font-size: 21px;
-  color: #000;
-  margin: 0 auto 10px;
-}
-
-.hr-lc-dropdown-ask {
-  color: #808080;
-  text-align: center;
-  margin: 0 auto 15px;
-}
-
-.hr-lc-dropdown-btns-wrap {
-  border-top: 1px solid #eaeaea;
-}
-
-button.hr-lc-dropdown-btns {
-  border: none;
-  background-color: transparent;
-  color: #0b80c4;
-  padding: 15px 35px;
-}
-
-button.hr-lc-dropdown-btns:focus {
-  outline: none;
 }
 
 .h-top {
@@ -211,61 +157,6 @@ button.hr-lc-dropdown-btns:focus {
   display: none;
 }
 
-.hr-lc-dropdown-2 {
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  padding: 20px 0 0;
-  z-index: 10;
-  top: 50px;
-  left: -88px;
-  width: 285px;
-}
-
-.hr-lc-dropdown-2-city-input-p {
-  color: #808080;
-  text-align: left;
-  margin: 0 auto 10px;
-  font-size: 14px;
-}
-
-.hr-lc-dropdown-2-input-wrap {
-  padding: 0 15px;
-}
-
-.hr-lc-dropdown-2-city-input {
-  border: none;
-  border-bottom: 2px solid #0b80c4;
-  width: 100%;
-  padding: 7px 0;
-  outline: none;
-}
-
-.hr-lc-dropdown-2-cities-list-wrap {
-  padding: 15px;
-  max-height: 220px;
-  overflow: overlay;
-}
-
-.hr-lc-dropdown-2-cities-list-wrap li {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.hr-lc-dropdown-2-find-city-auto-wrap {
-  padding: 15px;
-}
-
-.hr-lc-dropdown-2-find-city-auto-p {
-  margin: 0 0 0 5px;
-  display: inline-block;
-  color: #000;
-}
-
-.hr-lc-dropdown-2-find-city-auto-wrap i {
-  color: #0b80c4;
-}
-
 #burg {
   display: none;
 }
@@ -283,10 +174,6 @@ button.hr-lc-dropdown-btns:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .hr-lc-dropdown {
-    display: none;
-  }
-
   #city_dropdown {
     display: none !important;
   }
@@ -335,10 +222,6 @@ button.hr-lc-dropdown-btns:focus {
   .hl-lg-a img {
     width: 100%;
     max-width: 150px;
-  }
-
-  .hr-lc-w {
-    display: none;
   }
 
   .hr-sh-w {
@@ -414,13 +297,6 @@ button.hr-lc-dropdown-btns:focus {
   }
 
   .hr-sh-a {
-    border: none;
-    padding: 0;
-    color: #000;
-    font-family: "Museo300";
-  }
-  
-  .hr-lc-a {
     border: none;
     padding: 0;
     color: #000;

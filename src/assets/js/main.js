@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 $(document).ready(function(){
     initBurger();
-    initCityModal();
     initCollapse();
 });
 
@@ -12,30 +11,6 @@ function initBurger() {
     $('#burg').on('click', function() {
       $('.mobile-tab').slideToggle(400);
     });
-}
-
-function initCityModal() {
-    document.querySelectorAll('.js-open-city-modal').forEach(el => el.addEventListener('click', openCityModal));
-    document.querySelectorAll('.js-close-city-modal').forEach(el => el.addEventListener('click', closeCityModal));
-    document.querySelectorAll('.js-next-city-modal').forEach(el => el.addEventListener('click', nextCityModal));
-
-    function openCityModal(e) {
-        e.preventDefault();
-        document.querySelector('#city_dropdown').style.display = "block";
-        document.querySelector('#city_dropdown_mob').style.display = "block";
-    }
-
-    function closeCityModal() {
-        document.querySelector('#city_dropdown').style.display = "none";
-        document.querySelector('#city_dropdown_2').style.display = "none";
-        document.querySelector('#city_dropdown_mob').style.display = "none";
-    }
-    
-    function nextCityModal() {
-        document.querySelector('#city_dropdown').style.display = "none";
-        document.querySelector('#city_dropdown_mob').style.display = "none";
-        document.querySelector('#city_dropdown_2').style.display = "block";
-    }
 }
 
 function initCollapse() {
