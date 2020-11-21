@@ -1,0 +1,145 @@
+.category-head-section {
+  padding: 0;
+  margin: 117px 0 0;
+}
+
+img.category-subcategory-img {
+  width: 70px;
+}
+
+.category-subcategory-head-wrap {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  border: 1px solid #eaeaea;
+  margin: 0 0 20px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content:  flex-start;
+  align-items: center;
+}
+
+.category-subcategory-head-wrap:hover {
+  text-decoration: none;
+}
+
+.category-subcategory-name {
+  font-size: 16px;
+  padding: 0;
+  color: #292b2c;
+  display: inline-block;
+  transition: 0.2s linear;
+  font-family: 'Museo300';
+  margin: 0;
+  padding: 0 0 0 10px;
+  text-transform: none;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.filter-wrap-left ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.filter-wrap-left li {
+  margin: 0 18px 0 0;
+  font-family: 'Museo300';
+}
+
+.filter-wrap-left li i {
+  font-size: 11px;
+  margin-left: 3px;
+}
+
+.filter-wrap-right {
+  display: flex;
+}
+
+.filter-desktop-line {
+  padding: 15px 0;
+  margin: 20px 0 30px;
+}
+
+.filter-popular {
+  font-family: 'Museo300';
+  padding: 0 10px;
+}
+
+.filter-wrap-result {
+  padding: 0 0 0 10px;
+}
+
+.filter-mobile-wrapper {
+  width: 100%;
+}
+
+.filter-mobile-line {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .category-head-section {
+      margin: 73px 0 0;
+  }
+
+  .filter-desktop-line {
+      display: none;
+  }
+
+  .category-subcategory-head-wrap {
+      padding: 7px 5px;
+      flex-direction: column;
+      min-height: 116px;
+  }
+
+  .category-subcategory-name {
+      padding: 0;
+      text-align: center;
+  }
+
+  .filter-mobile-line {
+      display: block;
+      border: 1px solid #eaeaea;
+      padding: 10px 0;
+      margin: 30px 0 40px;
+  }
+
+  .filter-mobile-wrapper {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .filter-mobile-left-wrap {
+      width: 50%;
+  }
+
+  .filter-mobile-right-wrap {
+      width: 50%;
+  }
+
+  .filter-mobile-sort {
+      text-align: center;
+      font-size: 16px;
+      border-right: 1px solid #eaeaea;
+  }
+
+  .filter-mobile-filters {
+      text-align: center;
+      font-size: 16px;
+  }
+
+ .filter-mobile-wrapper i {
+      color: #959595;
+      margin-right: 5px;
+      font-size: 16px;
+  }
+
+  .category-subcategory-section .col-md-3.col-lg-3.col-sm-4.col-4 {
+      padding: 0 8px;
+  }
+}

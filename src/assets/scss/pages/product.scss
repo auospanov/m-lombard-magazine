@@ -1,0 +1,355 @@
+/* страница товара 1 с размером */
+.btn-size {
+  border: none;
+  outline: none;
+  padding: 9px 18px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px 5px 0;
+  font-size: 16px;
+  border: 2px solid #f9f9f9;
+  font-family: 'Museo300';
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+.active-size {
+  background-color: transparent;
+  color: #0b80c4;
+  border: 2px solid #0b80c4;
+}
+
+.btn-size.active-size:hover  {
+  background-color: #fff;
+  color: #0b80c4;
+  border: 2px solid #0b80c4;
+}
+
+.btn-size:hover {
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7;
+}
+
+
+.product-main-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.product-section {
+  margin: 116px 0 0;
+  padding: 30px 0 0;
+}
+
+.product-article {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.product-sale-percent {
+  display: inline-block;
+  padding: 0 15px;
+  color: #f00;
+}
+
+.product-section h1.h1 {
+  margin: 15px 0 25px;
+  font-size: 16px;
+  font-family: Museo300;
+}
+
+.product-price {
+  font-size: 28px;
+  font-family: 'Museo300';
+  display: inline-block;
+}
+
+strike.product-old-price {
+  color: #808080;
+  font-family: 'Museo300';
+  font-size: 19px;
+  margin: 0 0 0 20px;
+}
+
+.product-price-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.product-online-price {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.product-online-price i {
+  color: #0b80c4;
+  font-size: 18px;
+  margin: 0 12px 0 0;
+}
+
+.product-choice-size {
+  margin: 0 0 15px;
+}
+
+button.product-add-to-cart.e-button {
+  margin: 30px 15px 20px 0;
+  display: inline-block;
+}
+
+button.product-remove-from-cart.e-button {
+  margin: 0;
+  display: inline-block;
+}
+
+button.product-add-to-chosen {
+  padding: 14px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .2s linear;
+  transition-property: background-color,border-color,color,opacity;
+  color: #0b80c4;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  margin: 30px auto 0;
+  display: inline-block;
+  font-family: 'Museo300';
+}
+
+button.product-add-to-chosen:hover {
+  background-color: #e7e7e7;
+}
+
+button.product-add-to-chosen:focus {
+  outline-color: #0b80c4;
+}
+
+.product-add-to-chosen {
+  display: inline-block;
+}
+
+.product-add-to-chosen i {
+  padding: 17px 35px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .2s linear;
+  transition-property: background-color,border-color,color,opacity;
+  color: #0b80c4;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  margin: 30px auto 0;
+  display: inline-block;
+}
+
+
+a.product-in-stock-in-shops-a {
+  color: #0b80c4;
+  margin: 0 0 30px;
+  display: block;
+  font-size: 16px;
+}
+
+a.product-in-stock-in-shops-a:hover {
+  color: #014c8c;
+  text-decoration: underline;
+}
+
+.detailed-description-wrap {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 30px 0;
+}
+
+p.detailed-description-title {
+  font-family: 'Museo300';
+}
+
+p.description-line-title {
+  color: #9f9f9f;
+}
+
+p.description-line-char {
+  color: #000;
+}
+
+p.description-line-char:last-child {
+  margin: 0;
+}
+
+.product-buy-advantages-wrap {
+  margin: 30px 0 0 0;
+}
+
+.product-buy-advantage-img {
+  width: 46px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.product-buy-advantages-wrapper {
+  display: flex;
+}
+
+.products-buy-advantage {
+  text-align: center;
+}
+
+.modall {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 3%; /* was 100px */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000c;
+}
+
+.modall-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-size: 50px;
+  opacity: 1;
+  font-family: 'Museo300';
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.works .mySlides {
+  display: none;
+}
+
+.works .cursor {
+  cursor: pointer;
+}
+
+.full-img {
+  height: 90vh;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .product-section {
+      margin: 73px 0 0;
+  }
+  
+  .full-img {
+      height: auto;
+      margin: 30% auto 0;
+      display: block;
+      border-radius: 15px;
+      width: 100%;
+  }
+  
+  .close {
+      top: 3%;
+      right: 6%;
+      font-size: 40px;
+  }
+  
+}
+
+
+
+
+/* /страница товара 1 с размером */
+
+/* /страница товара 2 с несколько фото */
+
+.product-section .column {
+  cursor: pointer;
+  margin: 0 0 15px;
+  border: 1px solid #eaeaea;
+}
+
+.product-img-wrap-container {
+position: relative;
+}
+
+.product-section .column img {
+  width: 100%;
+}
+
+.column-flex {
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .product-section .column img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  
+  .product-section .column {
+      margin: 0;
+      border: none;
+      width: 30%;
+  }
+  
+  .column-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+  }
+  
+  .flex-row {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .ord1 {
+      order: 2;
+  }
+  
+  .ord2 {
+      order: 1;
+  }
+  
+  .column-flex {
+      margin: 0 0 30px;
+  }
+  
+  .full-img {
+      height: auto;
+      margin: 30% auto 0;
+      display: block;
+      border-radius: 15px;
+      width: 100%;
+  }
+  
+  .close {
+      top: 3%;
+      right: 6%;
+      font-size: 40px;
+  }
+  
+}

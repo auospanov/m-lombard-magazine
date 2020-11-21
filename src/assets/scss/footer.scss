@@ -1,0 +1,135 @@
+footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 35px;
+  margin-top: 70px;
+}
+
+.footer-list-wrap li a {
+  color: #808080;
+  padding: 5px 0;
+  display: block;
+}
+
+.footer-list-wrap li a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+.footer-list-wrap li a.footer-list-title {
+  color: #333;
+  font-family: "Museo300";
+  font-size: 16px;
+}
+
+.footer-social-wrap a img {
+  width: 32px;
+  background-color: #f9f9f9;
+  padding: 6px;
+  border-radius: 22px;
+  margin-right: 10px;
+}
+
+.footer-phone-wrap a {
+  color: #333;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+  display: block;
+  font-family: "Museo300";
+}
+
+.footer-phone-wrap a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.copyright {
+  position: absolute;
+  top: 220px;
+  color: #808080;
+  font-size: 16px;
+}
+
+.desktop-footer {
+  display: block;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-family: "Museo300";
+}
+
+.footer-active,
+.collapsible:hover {
+  background-color: transparent;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: #000;
+  float: right;
+  margin-left: 5px;
+  font-family: "Museo300";
+}
+
+.footer-active:after {
+  content: "\2212";
+}
+
+.footer-content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+}
+
+.footer-content li {
+  padding: 7px 0;
+}
+
+.footer-content li a {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 35px 0;
+  }
+
+  .footer-social-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    position: relative;
+    top: 0;
+    margin: 30px 0 0;
+  }
+
+  .desktop-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+  }
+
+  .footer-phone-wrap a {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+}

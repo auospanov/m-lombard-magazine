@@ -2,7 +2,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './assets/css/reset.css';
-import './assets/css/styles.css';
+import './assets/scss/styles.scss';
 
 import './assets/js/main';
 

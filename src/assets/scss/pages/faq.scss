@@ -1,0 +1,30 @@
+.faq-section-width .container {
+  width: 70%;
+}
+
+.faq-1 {
+  margin-top: 117px;
+}
+
+.h3-faq {
+  font-size: 20px;
+  font-family: 'Museo300';
+  margin: 45px 0 20px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-section-width .container {
+      width: 100%;
+  }
+
+  .faq-1 {
+      margin-top: 74px;
+  }
+
+  .h3-faq {
+      font-size: 20px;
+      margin: 45px 0 20px;
+      line-height: 1.4;
+  }
+}

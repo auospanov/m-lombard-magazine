@@ -1,0 +1,170 @@
+.e-section {
+  padding: 40px 0;
+  margin: 117px 0 0;
+}
+
+section.fav-head-section {
+  padding: 0 0 40px;
+  margin: 117px 0 0;
+}
+
+p.fav-head-p {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+
+.fav-item-sale-percent {
+  color: #ff0900;
+  display: inline-block;
+}
+
+.fav-item-sold-text {
+  font-weight: 600;
+  color: #ff0900;
+}
+
+.fav-item-heart-wrap {
+  display: inline-block;
+  float: right;
+}
+
+.fav-item-heart-btn-wrap {
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+.fav-item-heart-btn-wrap:focus {
+  outline: none;
+}
+
+img.fav-item-heart-img {
+  width: 24px;
+}
+
+a.fav-item-a-wrap {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img.fav-item-goods-img {
+  width: 100%;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+}
+
+img.fav-item-goods-img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer;
+}
+
+.fav-item-goods-img-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+span.fav-item-price-actual {
+  color: #000;
+  font-size: 16px;
+  margin: 0 4px 0 0;
+}
+
+strike.fav-item-price-old {
+  color: #808080;
+  text-align: left;
+  font-family: 'Museo300';
+}
+
+h2.fav-item-h2 {
+  color: #808080;
+  font-size: 14px;
+  margin: 5px 0 0;
+  line-height: 1.5;
+  overflow: hidden;
+  max-height: 42px;
+  text-transform: none;
+}
+
+.fav-item-price-wrap {
+  overflow: hidden;
+  max-height: 20px;
+  display: block;
+}
+
+.fav-item-wrap {
+  margin: 0 0 35px;
+}
+
+.anymore-chosen {
+  opacity: 0.5;
+}
+
+/* .fav-item-heart-btn-wrap:focus i {
+  color: red;
+}
+ */
+.fav-item-heart-btn-wrap i {
+  font-size: 20px;
+  color: rgb(255,237,0);
+}
+
+.app-loader-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  background: #000000;
+  z-index: 1000;
+}
+
+.app-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* transform: translate(); */
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.app-loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: app-loader 1.2s linear infinite;
+}
+
+@keyframes app-loader {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .fav-head-section {
+      margin: 73px 0 0;
+  }
+
+  img.fav-item-heart-img {
+      width: 20px;
+  }
+}

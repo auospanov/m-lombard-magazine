@@ -1,0 +1,63 @@
+.personal-cabinet {
+  padding: 40px 0;
+  margin: 117px 0 0;
+}
+
+.personal-cab-wrap {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.personal-cab-wrap h1 {
+  margin: 0 0 30px;
+  font-family: "Museo300";
+  font-size: 28px;
+  text-align: center;
+}
+
+label.personal-cab-label {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+}
+
+input.personal-cab-input {
+  padding: 7px 5px;
+  border: none;
+  border-bottom: 2px solid #808080;
+  font-size: 16px;
+  outline: none;
+}
+
+input.personal-cab-input:focus {
+  border-color: #ffeb02;
+}
+
+p.personal-cab-under-input {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+button.personal-cab-button {
+  color: #808080;
+  background-color: #f9f9f9;
+  padding: 14px 30px;
+  border: 2px solid #eaeaea;
+  font-size: 16px;
+  margin: 15px 0 0;
+}
+
+button.personal-cab-button[disabled] {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .personal-cab-wrap h1 {
+    font-size: 24px;
+    margin: 0 0 15px;
+  }
+}

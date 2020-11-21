@@ -1,0 +1,273 @@
+section.cart-section {
+  padding: 40px 0;
+  margin: 117px 0 0;
+}
+
+h1.cart-h1 {
+  margin: 0 0 30px;
+  font-size: 32px;
+  text-align: left;
+  font-family: "Museo300";
+}
+
+h2.cart-sutitle {
+  font-size: 21px;
+  margin: 0 0 30px;
+  font-family: "Museo300";
+}
+
+.cart-sidebar-wrap {
+  background-color: #fbfbfb;
+  padding: 28px 23px;
+}
+
+.cart-title {
+  font-size: 20px;
+  margin: 0 0 25px;
+  font-family: "Museo300";
+}
+
+span.cart-sidebar-preprice {
+  font-size: 13px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+
+span.cart-sidebar-prediscount {
+  font-size: 13px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+
+span.cart-sidebar-precost {
+  font-size: 13px;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+
+.cart-sidebar-order-wrap {
+  font-size: 13px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+
+span.cart-sidebar-preprice-2 {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+}
+
+span.cart-sidebar-prediscount-2 {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+}
+
+span.cart-sidebar-precost-2 {
+  font-size: 16px;
+  margin: 0;
+  font-family: "Museo300";
+}
+
+.cart-sidebar-price-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 5px;
+}
+
+.cart-sidebar-discount-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-sidebar hr {
+  margin: 13px 0;
+}
+
+.cart-sidebar-full-cost {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.cart-siebar-order.e-button {
+  margin: 20px auto;
+  width: 100%;
+}
+
+img.cart-item-img {
+  width: 75px;
+  height: 75px;
+}
+
+.cart-items-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-art {
+  font-size: 13px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+
+a.cart-item-name {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+  color: #000;
+}
+
+a.cart-item-name:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-item-size {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+  margin: 0;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  font-family: "Museo300";
+  margin: 0;
+}
+
+.cart-items-wrap {
+  border-bottom: 1px solid #eee;
+  padding: 30px 0;
+}
+
+.cart-items-wrap:last-child {
+  border: none;
+}
+
+.cart-item-img {
+  flex-basis: 55px;
+}
+
+.cart-item-art-n-name-wrap {
+  flex-grow: 1;
+}
+
+.cart-item-quantity-wrap {
+  text-align: center;
+}
+
+.cart-item-size {
+  text-align: center;
+}
+
+.cart-item-price {
+  text-align: center;
+}
+
+.cart-item-delete-btn-wrap {
+  background: none;
+  border: none;
+}
+
+.cart-item-delete-btn-wrap i {
+  color: #cdcdcd;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+}
+
+.cart-item-delete-btn-wrap:hover {
+  text-decoration: none;
+}
+
+.cart-item-delete-btn-wrap:hover i {
+  color: #999;
+}
+
+.cart-item-quantity-wrap a {
+  margin: 0 5px;
+}
+
+.cart-item-quantity-plus-wrap i {
+  color: rgb(255, 237, 0);
+}
+
+.cart-item-quantity-plus-wrap:hover {
+  text-decoration: none;
+}
+
+.cart-item-quantity-minus-wrap i {
+  color: #cdcdcd;
+}
+
+.cart-item-quantity-minus-wrap:hover {
+  text-decoration: none;
+}
+
+strike.cart-item-discon-price {
+  display: block;
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-items-wrap {
+    padding: 30px 0 50px;
+    position: relative;
+  }
+
+  .cart-item-quantity-wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+  }
+
+  .cart-item-size {
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+  }
+
+  .cart-item-price {
+    position: absolute;
+    top: 110px;
+    left: 130px;
+  }
+
+  .cart-items-wrap {
+    align-items: end;
+  }
+
+  h1.cart-h1 {
+    font-size: 26px;
+  }
+  
+  section.cart-section {
+    padding: 24px 0;
+    margin: 73px 0 0;
+  }
+  
+  h2.cart-sutitle {
+    font-size: 16px;
+  }
+  
+  .cart-sidebar-wrap {
+    padding: 28px 15px;
+  }
+  
+  img.cart-item-img {
+    width: 130px;
+    height: 130px;
+  }
+}

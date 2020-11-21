@@ -1,0 +1,17 @@
+.about-company-section-width .container {
+  width: 70%;
+}
+
+.about-company-1 {
+  margin-top: 117px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-company-section-width .container {
+      width: 100%;
+  }
+  
+  .about-company-1 {
+      margin-top: 74px;
+  }
+}

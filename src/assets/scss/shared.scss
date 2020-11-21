@@ -1,0 +1,66 @@
+.e-p {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.e-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1.e-h1 {
+  color: #000;
+  text-align: center;
+  margin: 0 0 30px;
+  font-size: 32px;
+  font-family: "Museo300";
+}
+
+.e-button {
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  transition-property: background-color, border-color, color, opacity;
+  color: #000;
+  background-color: #fff500;
+  border: 1px solid transparent;
+  margin: 30px auto 0;
+  display: block;
+  font-family: "Museo300";
+}
+
+.e-button:hover {
+  background-color: #ffe200;
+}
+
+.e-button:disabled {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  li.mobile-li.open {
+    position: relative;
+  }
+
+  .mobile-li .dropdown-menu {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 1px solid #eaeaea;
+    margin: 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .mobile-li a {
+    padding: 7px 16px;
+  }
+}

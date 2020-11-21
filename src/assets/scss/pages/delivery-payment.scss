@@ -1,0 +1,59 @@
+.delivery-payment-section-width .container {
+  width: 70%;
+}
+
+.delivery-payment-1 {
+  margin-top: 117px;
+}
+
+img.delivery-payment-icon {
+  width: 70px;
+  margin: 0 auto;
+  display: block;
+}
+.row-border-bottom {
+  border-bottom: 1px solid #eaeaea;
+  padding: 30px 0;
+}
+.p-regular.p-delivery-paymen-icon-p {
+  margin: 0;
+  padding: 12px 0 0;
+}
+.h3-delivery-payment {
+  font-family: 'Museo300';
+  margin: 40px 0 30px;
+  font-size: 28px;
+}
+img.delivery-payment-list-img {
+  width: 100%;
+  margin: 0 0 30px;
+}
+
+.here-a {
+  font-family: 'Museo300';
+  margin-bottom: 20px;
+  font-size: 16px;   
+}
+
+.delivery-payment-way h4 {
+  font-family: 'Museo300';
+}
+
+@media screen and (max-width: 768px) {
+  .delivery-payment-section-width .container {
+      width: 100%;
+  }
+
+  .delivery-payment-1 {
+      margin-top: 74px;
+  }
+
+  .p-regular.p-delivery-paymen-icon-p {
+      padding: 0;
+  }
+
+  .h3-delivery-payment {
+      font-size: 20px;
+      line-height: 1.4;
+  }
+}
