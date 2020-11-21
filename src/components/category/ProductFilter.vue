@@ -43,13 +43,6 @@
                 </li>
               </ul>
             </div>
-            <div class="filter-wrap-right">
-              <div class="filter-popular">
-                <i class="fas fa-arrows-alt-v"></i>
-                Популярное
-              </div>
-              <div class="filter-wrap-result">Найдено {{ products.length }}</div>
-            </div>
           </div>
         </div>
       </div>
