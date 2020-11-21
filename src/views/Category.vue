@@ -11,7 +11,6 @@
         </div>
       </div>
     </section>
-    <ProductKinds v-if="productKinds" :category-id="this.id" :product-kinds="productKinds" />
     <ProductFilter v-if="products.length" :products="products" />
     <Products v-if="products.length" :products="products" @toggleWishListItem="toggleWishListItem" />
     <infinite-loading @infinite="setProducts">
@@ -26,7 +25,6 @@ import axios from 'axios';
 import { mapState, mapActions } from 'vuex';
 import InfiniteLoading from 'vue-infinite-loading';
 
-import ProductKinds from '@/components/category/ProductKinds';
 import ProductFilter from '@/components/category/ProductFilter';
 import Products from '@/components/category/Products';
 
@@ -34,7 +32,6 @@ export default {
   name: 'Category',
   components: {
     InfiniteLoading,
-    ProductKinds,
     ProductFilter,
     Products,
   },
