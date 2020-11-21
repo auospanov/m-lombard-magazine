@@ -19,14 +19,6 @@
           </div>
           <div class="col-md-5 col-sm-4 col-4">
             <div class="hr-w">
-              <div class="hr-w-left">
-                <div class="hr-sh-w">
-                  <a href="/shops" class="hr-sh-a"> Магазины </a>
-                </div>
-                <div class="hr-lb-w">
-                  <a href="#" class="hr-lb-a"> Ломбарды </a>
-                </div>
-              </div>
               <div class="hr-w-right">
                 <a href="#" class="hr-w-ic-search">
                   <img src="@/assets/images/search.svg" alt="поиск" />
@@ -81,14 +73,6 @@
     </div>
 
     <div class="mobile-tab">
-      <div class="hr-lc-w-mob">
-        <div class="hr-sh-w">
-          <a href="/shops" class="hr-sh-a"> Магазины </a>
-        </div>
-      </div>
-      <div class="hr-lb-w-mob">
-        <a href="#" class="hr-lb-a"> Ломбарды </a>
-      </div>
       <div class="hr-lg-w-mob">
         <a href="/personal-cabinet" class="hr-w-ic-login">
           <img src="@/assets/images/user.svg" alt="пользователь" />

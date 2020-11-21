@@ -14,7 +14,6 @@ import Favorites from '../views/Favorites';
 import PersonalCabinet from '../views/PersonalCabinet';
 import Product1 from '../views/Product1';
 import ReturnExchange from '../views/ReturnExchange';
-import Shops from '../views/Shops';
 import PageNotFound from '../views/PageNotFound';
 
 Vue.use(VueRouter);
@@ -106,12 +105,6 @@ const routes = [
     name: 'ReturnExchange',
     component: ReturnExchange,
     meta: { title: 'М-Ломбард - Возврат и обмен' },
-  },
-  {
-    path: '/shops',
-    name: 'Shops',
-    component: Shops,
-    meta: { title: 'М-Ломбард - Магазины' },
   },
   {
     path: '*',

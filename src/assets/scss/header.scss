@@ -66,17 +66,6 @@ header {
   width: 18px;
 }
 
-.hr-w-left a {
-  color: #292b2c;
-  padding-right: 15px;
-  font-family: Museo300;
-}
-
-.hr-w-left a:hover {
-  color: #292b2c;
-  text-decoration: none;
-}
-
 .hr-w-right {
   padding: 20px 0;
 }
@@ -89,31 +78,8 @@ a.hr-w-ic-cart {
   text-decoration: none;
 }
 
-.hr-sh-w {
-  display: inline-block;
-}
-
-.hr-lb-w {
-  display: inline-block;
-}
-
-.hr-sh-a {
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.hr-lb-a {
-  padding-left: 15px;
-}
-
 .hr-w {
   display: flex;
-}
-
-.hr-w-left {
-  position: relative;
 }
 
 .h-top {
@@ -224,14 +190,6 @@ a.hr-w-ic-cart {
     max-width: 150px;
   }
 
-  .hr-sh-w {
-    display: none;
-  }
-
-  .hr-lb-w {
-    display: none;
-  }
-
   .hr-w-ic-login {
     display: none;
   }
@@ -283,10 +241,6 @@ a.hr-w-ic-cart {
     padding: 0;
   }
 
-  .hr-lc-w-mob .hr-sh-w {
-    display: inline-block;
-  }
-
   .hr-lc-w-mob {
     background-color: #f9f9f9;
     border-bottom: 1px solid #eaeaea;
@@ -296,29 +250,6 @@ a.hr-w-ic-cart {
     padding: 20px 15px;
   }
 
-  .hr-sh-a {
-    border: none;
-    padding: 0;
-    color: #000;
-    font-family: "Museo300";
-  }
-  
-  .hr-lb-a {
-    display: block;
-  }
-  
-  .hr-lb-w-mob {
-    border-bottom: 1px solid #eaeaea;
-    padding: 20px 15px;
-  }
-  
-  .hr-lb-w-mob .hr-lb-a {
-    display: block;
-    color: #000;
-    padding: 0;
-    font-family: "Museo300";
-  }
-  
   .hr-lg-w-mob {
     border-bottom: 1px solid #eaeaea;
     padding: 20px 15px;
