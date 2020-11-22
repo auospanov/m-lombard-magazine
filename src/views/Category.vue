@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="category-head-wrap">
-              <h1 class="h1">{{ title }}</h1>
+              <h1 class="h1 global-title">{{ title || 'Каталог' }}</h1>
             </div>
           </div>
         </div>

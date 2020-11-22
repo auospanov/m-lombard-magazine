@@ -17,8 +17,21 @@ p.fav-head-p {
 }
 
 .fav-item-sale-percent {
-  color: #ff0900;
+  position: relative;
   display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFF500;
+
+  &::after {
+    content: url('~@/assets/images/union.svg');
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 }
 
 .fav-item-sold-text {
@@ -65,8 +78,9 @@ img.fav-item-goods-img:hover {
 }
 
 .fav-item-goods-img-wrap {
-  overflow: hidden;
+  margin-top: 8px;
   width: 100%;
+  overflow: hidden;
 }
 
 span.fav-item-price-actual {
@@ -105,13 +119,13 @@ h2.fav-item-h2 {
   opacity: 0.5;
 }
 
-/* .fav-item-heart-btn-wrap:focus i {
-  color: red;
-}
- */
 .fav-item-heart-btn-wrap i {
   font-size: 20px;
-  color: rgb(255,237,0);
+  color: #000000;
+}
+
+.fav-item-heart-btn-wrap i.fas {
+  color: #FF0000;
 }
 
 .app-loader-wrapper {
