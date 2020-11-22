@@ -90,50 +90,6 @@
         </div>
       </div>
     </div>
-
-    <div class="mobile-tab">
-      <div class="hr-lg-w-mob">
-        <a href="/personal-cabinet" class="hr-w-ic-login">
-          <img src="@/assets/images/user.svg" alt="пользователь" />
-          Войти
-        </a>
-      </div>
-
-      <nav id="mobile">
-        <ul v-if="categories" class="mobile-ul">
-          <li
-            class="mobile-li header-second-list"
-            v-for="category in categories"
-            :key="category.ID"
-          >
-            <a
-              :href="
-                category.ProductKinds && category.ProductKinds.length
-                  ? '#'
-                  : `/category/${category.ID}`
-              "
-              class="mobile-a header-first-list-a"
-              :class="{'dropdown-toggle': category.ProductKinds && category.ProductKinds.length}"
-              :data-toggle="category.ProductKinds && category.ProductKinds.length ? 'dropdown' : ''"
-            >
-              {{ category.Name }}
-            </a>
-            <div v-if="category.ProductKinds && category.ProductKinds.length" class="dropdown-content">
-              <ul class="dropdown-menu">
-                <li
-                  v-for="productKind in category.ProductKinds"
-                  :key="productKind.ID" class="header-second-list"
-                >
-                  <a :href="`/category/${category.ID}/${productKind.ID}`">
-                    {{ productKind.Name }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
   </header>
 </template>
 

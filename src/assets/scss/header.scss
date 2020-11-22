@@ -163,9 +163,6 @@ a.hr-w-ic-cart {
 #burg {
   display: none;
 }
-.mobile-tab {
-  display: none;
-}
 
 .h-bot nav ul li.header-second-list a {
   padding: 0 0 5px;
@@ -182,7 +179,7 @@ a.hr-w-ic-cart {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #city_dropdown {
     display: none !important;
   }
@@ -297,20 +294,6 @@ a.hr-w-ic-cart {
     width: 20px;
   }
 
-  .mobile-tab nav ul li a {
-    padding: 10px 15px;
-    color: #292b2c;
-    display: block;
-    transition: 0.2s linear;
-    font-size: 16px;
-  }
-
-  .mobile-tab nav ul li a:hover {
-    color: rgb(255, 237, 0);
-    transition: 0.2s linear;
-    text-decoration: none;
-  }
-
   .hr-lc-w-mob .hr-lc-w {
     display: inline-block;
     padding: 0;
@@ -323,15 +306,5 @@ a.hr-w-ic-cart {
     display: flex;
     justify-content: space-between;
     padding: 20px 15px;
-  }
-
-  .hr-lg-w-mob {
-    border-bottom: 1px solid #eaeaea;
-    padding: 20px 15px;
-  }
-  
-  .hr-lg-w-mob .hr-w-ic-login {
-    display: block;
-    color: #000;
   }
 }

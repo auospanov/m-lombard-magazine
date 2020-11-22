@@ -7,9 +7,7 @@ $(document).ready(function(){
 });
 
 function initBurger() {
-    $('.mobile-tab').hide();
     $('#burg').on('click', function() {
-      $('.mobile-tab').slideToggle(400);
     });
 }
 
