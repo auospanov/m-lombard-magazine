@@ -83,7 +83,7 @@
               :arrows="false"
               :visible-slides="2"
               slide-multiple
-              :dragging-distance="150"
+              :dragging-distance="100"
               :slide-ratio="1 / 2"
             >
               <vueper-slide
@@ -112,7 +112,7 @@
               :visible-slides="4"
               :slide-ratio="1 / 3"
               slide-multiple
-              :dragging-distance="150"
+              :dragging-distance="100"
               :breakpoints="{ 768: { visibleSlides: 2, slideMultiple: 2 } }"
             >
               <vueper-slide
