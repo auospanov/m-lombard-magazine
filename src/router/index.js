@@ -26,6 +26,12 @@ const routes = [
     meta: { title: 'М-Ломбард' },
   },
   {
+    path: '/category',
+    name: 'Category',
+    component: Category,
+    meta: { title: 'М-Ломбард - Товары' },
+  },
+  {
     path: '/category/:id',
     name: 'Category',
     component: Category,

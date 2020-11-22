@@ -38,7 +38,7 @@ export default {
   props: {
     id: {
       type: String,
-      required: true,
+      default: '',
     },
     productKindId: {
       type: String,
@@ -78,7 +78,7 @@ export default {
         count: 12,
         sort: null,
         ProductStateFilter: [1, 2, 3],
-        ProductCategoriesFilter: [this.id],
+        ProductCategoriesFilter: this.id ? [this.id] : [],
         ProductKindsFilter: this.productKindId ? [this.productKindId] : [],
         StonesFilter: [],
         GoldColorFilter: [],

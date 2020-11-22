@@ -65,6 +65,9 @@
           <div class="col-md-12">
             <nav>
               <ul v-if="categories" class="first-ul">
+                <li class="header-first-list">
+                  <router-link to="/category">Каталог</router-link>
+                </li>
                 <li
                   class="header-first-list"
                   v-for="category in categories"
