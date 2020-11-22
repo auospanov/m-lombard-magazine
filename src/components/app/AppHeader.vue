@@ -30,7 +30,9 @@
               <a href="/" class="hl-lg-a">
                 <img src="@/assets/images/logo-shop.png" alt="Магазин" />
               </a>
-              <input type="text" class="hl-lg-input --desktop" placeholder="Поиск...">
+              <div class="hl-lg-input-wrapper --desktop">
+                <input type="text" class="hl-lg-input" placeholder="Поиск...">
+              </div>
               <img src="@/assets/images/logo-lombard.png" class="hl-lg-logo-lombard" alt="Ломбард" />
             </div>
           </div>
@@ -54,7 +56,9 @@
         </div>
         <div class="row mobile-input-wrapper">
           <div class="col-12">
-            <input type="text" class="hl-lg-input --mobile" placeholder="Поиск...">
+            <div class="hl-lg-input-wrapper --mobile">
+              <input type="text" class="hl-lg-input" placeholder="Поиск...">
+            </div>
           </div>
         </div>
       </div>
