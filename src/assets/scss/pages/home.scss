@@ -51,6 +51,12 @@ margin: 0 0 30px 0;
   text-decoration: none;
 }
 
+.home-goods {
+  &--mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home-goods .container {
     padding: 0;
@@ -62,5 +68,16 @@ margin: 0 0 30px 0;
 
   .goods-row img {
     margin: 0 0 25px;
+  }
+
+  .home-goods {
+    &--desktop {
+      display: none;   
+    }
+
+    &--mobile {
+      margin-top: 30px;
+      display: block;
+    }
   }
 }
