@@ -1,5 +1,20 @@
 <template>
   <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 h-app-suggestion">
+          <button class="h-app-suggestion__button">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+          <span class="h-app-suggestion__text">
+            Установите наше мобильное приложение!
+          </span>
+          <button class="h-app-suggestion__button">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="h-top">
       <div class="container">
         <div class="row">
