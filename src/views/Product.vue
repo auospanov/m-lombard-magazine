@@ -62,7 +62,7 @@
               </div>
 
               <div class="product-add-to-cart-wrap">
-                <button class="product-add-to-cart e-button" @click="addCartItem" :disabled="isExistInCart" >
+                <button class="product-add-to-cart outline-button" @click="addCartItem" :disabled="isExistInCart" >
                   <span v-if="isExistInCart">Товар в корзине</span>
                   <span v-if="!isExistInCart">Добавить в корзину</span>
                 </button>
@@ -160,7 +160,6 @@
     <div id="myModall" class="modall">
       <span class="close cursor" @click="closeModal">&times;</span>
       <div class="modall-content">
-
         <div class="mySlides" @click="closeModal">
           <img src="@/assets/images/ring-1.jpeg" id="expandImgModal" class="full-img">
         </div>
