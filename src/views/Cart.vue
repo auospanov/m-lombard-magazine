@@ -17,7 +17,7 @@
       <template v-if="cartCount">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="cart-h1">
+            <h1 class="cart-h1 global-title">
               В вашей корзине
               {{ cartCount }}
               {{ pluralize(cartCount, ['товар', 'товара', 'товаров']) }}
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-lg-8 col-md-7 col-12">
             <div class="cart-subtitle-wrap">
               <h2 class="cart-sutitle">Товары доступные для заказа</h2>
             </div>
@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-4 col-md-5 col-12">
             <div class="cart-sidebar-wrap">
               <div class="cart-sidebar">
                 <h4 class="cart-title">Стоимость заказа</h4>
@@ -61,7 +61,7 @@
                     {{ cartCount }}
                     {{ pluralize(cartCount, ['товар', 'товара', 'товара']) }}
                   </span>
-                  <span class="cart-sidebar-preprice-2"> {{ prettyPrice(cartTotal) }} тг </span>
+                  <span class="cart-sidebar-preprice-2"> {{ prettyPrice(cartTotal) }}&nbsp;тг </span>
                 </div>
                 <!-- <div class="cart-sidebar-discount-wrap">
                   <span class="cart-sidebar-prediscount"> Скидка на товары </span>
@@ -70,13 +70,9 @@
                 <hr />
                 <div class="cart-sidebar-full-cost">
                   <span class="cart-sidebar-precost"> Итого </span>
-                  <span class="cart-sidebar-precost-2"> {{ prettyPrice(cartTotal) }} тг </span>
+                  <span class="cart-sidebar-precost-2"> {{ prettyPrice(cartTotal) }}&nbsp;тг </span>
                 </div>
                 <button class="cart-siebar-order e-button">Оформить заказ</button>
-                <div class="cart-sidebar-order-wrap">
-                  Итоговая стоимость указана без учета стоимости доставки,
-                  промокодов, бонусных баллов и дополнительных скидок.
-                </div>
               </div>
             </div>
           </div>

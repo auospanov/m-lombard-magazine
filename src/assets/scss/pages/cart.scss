@@ -11,13 +11,14 @@ h1.cart-h1 {
 }
 
 h2.cart-sutitle {
-  font-size: 21px;
+  font-size: 16px;
+  font-weight: 700;
   margin: 0 0 30px;
   font-family: "Museo300";
 }
 
 .cart-sidebar-wrap {
-  background-color: #fbfbfb;
+  background-color: #EAEAEA;
   padding: 28px 23px;
 }
 
@@ -29,7 +30,6 @@ h2.cart-sutitle {
 
 span.cart-sidebar-preprice {
   font-size: 13px;
-  color: #808080;
   font-weight: 100;
   margin: 0;
   text-align: left;
@@ -89,6 +89,7 @@ span.cart-sidebar-precost-2 {
 
 .cart-sidebar hr {
   margin: 13px 0;
+  border-top-color: #000;
 }
 
 .cart-sidebar-full-cost {
@@ -97,7 +98,8 @@ span.cart-sidebar-precost-2 {
 }
 
 button.cart-siebar-order.e-button {
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 0;
   width: 100%;
 }
 
