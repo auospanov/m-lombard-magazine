@@ -20,7 +20,7 @@ export default {
 
     @media screen and (max-width: 768px) {
       .page-not-found {
-        margin: 145px 0 0;
+        margin: 200px 0 0;
       }
     }
   }
