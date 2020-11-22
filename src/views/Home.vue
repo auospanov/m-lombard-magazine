@@ -75,21 +75,53 @@
     </div>
     <div class="home-goods home-goods--mobile">
       <div class="container">
-        <div class="col-12">
-          <vueper-slides
-            class="no-shadow"
-            :bullets="false"
-            :arrows="false"
-            :visible-slides="3"
-            slide-multiple
-            :dragging-distance="200"
-          >
-            <vueper-slide
-              v-for="(slide, i) in slides"
-              :key="i"
-              :image="slide.image"
-            />
-          </vueper-slides>
+        <div class="row">
+          <div class="col-12">
+            <vueper-slides
+              class="no-shadow"
+              :bullets="false"
+              :arrows="false"
+              :visible-slides="3"
+              slide-multiple
+              :dragging-distance="200"
+            >
+              <vueper-slide
+                v-for="(slide, i) in categorySlides"
+                :key="i"
+                :image="slide.image"
+              />
+            </vueper-slides>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-recent">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="global-title">Вы недавно смотрели</h2>
+          </div>
+        </div>
+        <div class="row home-recent__slides-row">
+          <div class="col-12">
+            <vueper-slides
+              class="no-shadow"
+              :bullets="false"
+              :arrows="false"
+              :visible-slides="4"
+              :gap="3"
+              :slide-ratio="1 / 4"
+              slide-multiple
+              :dragging-distance="200"
+              :breakpoints="{ 768: { visibleSlides: 3, slideMultiple: 3 } }"
+            >
+              <vueper-slide
+                v-for="(slide, i) in recentSlides"
+                :key="i"
+                :image="slide.image"
+              />
+            </vueper-slides>
+          </div>
         </div>
       </div>
     </div>
@@ -97,15 +129,22 @@
 </template>
 
 <script>
-/* eslint-disable */
+/* eslint-disable import/no-dynamic-require  */
+/* eslint-disable global-require  */
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css';
 
 import Slider from '@/components/home/Slider';
 
-function getSlidesForMobileGoods() {
+function getCategoriesForMobileGoods() {
   return Array(12).fill({}).map((slide, index) => ({
     image: require(`@/assets/images/img${index + 1}.png`),
+  }));
+}
+
+function getRecentSlides() {
+  return Array(8).fill({}).map((_, index) => ({
+    image: require(`@/assets/images/product-${index + 1}.jpg`),
   }));
 }
 
@@ -118,7 +157,8 @@ export default {
   },
   data() {
     return {
-      slides: getSlidesForMobileGoods(),
+      categorySlides: getCategoriesForMobileGoods(),
+      recentSlides: getRecentSlides(),
     };
   },
 };
