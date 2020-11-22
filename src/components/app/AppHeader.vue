@@ -101,15 +101,16 @@
           </span>
         </div>
         <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
+          <ul v-if="categories" class="mobile-menu__list">
             <li class="mobile-menu__item">
               <a href="#" class="mobile-menu__link">Войти / зарегистрироваться</a>
             </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Бриллианты</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Кольца</a>
+            <li
+              class="mobile-menu__item"
+              v-for="category in categories"
+              :key="category.ID"
+            >
+              <a :href="`/category/${category.ID}`" class="mobile-menu__link">{{ category.Name }}</a>
             </li>
           </ul>
         </nav>
