@@ -109,8 +109,7 @@
               :bullets="false"
               :arrows="false"
               :visible-slides="4"
-              :gap="3"
-              :slide-ratio="1 / 4"
+              :slide-ratio="1 / 5"
               slide-multiple
               :dragging-distance="200"
               :breakpoints="{ 768: { visibleSlides: 3, slideMultiple: 3 } }"
@@ -124,6 +123,59 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="home-suggestions">
+       <div class="container">
+         <div class="row">
+           <div class="col-12">
+             <h2 class="global-title">Вам может понравиться</h2>
+           </div>
+         </div>
+         <div class="row home-suggestions__products-row home-suggestions__products-row--first">
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-1.jpg" alt="" />
+              </a>
+           </div>
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-2.jpg" alt="" />
+              </a>
+           </div>
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-3.jpg" alt="" />
+              </a>
+           </div>
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-4.jpg" alt="" />
+              </a>
+           </div>
+         </div>
+         <div class="row home-suggestions__products-row">
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-5.jpg" alt="" />
+              </a>
+           </div>
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-6.jpg" alt="" />
+              </a>
+           </div>
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-7.jpg" alt="" />
+              </a>
+           </div>
+           <div class="col-md-3 col-6">
+              <a href="#">
+                <img src="@/assets/images/suggestion-8.jpg" alt="" />
+              </a>
+           </div>
+         </div>
+       </div>
     </div>
   </div>
 </template>
