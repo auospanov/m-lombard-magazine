@@ -4,6 +4,7 @@
 }
 
 .filter-wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
@@ -23,6 +24,11 @@
 .filter-wrap-left li i {
   font-size: 11px;
   margin-left: 3px;
+}
+
+.filter-wrap-right i {
+  font-size: 11px;
+  margin-left: 3px
 }
 
 .filter-desktop-line {
@@ -53,28 +59,12 @@
 
   .filter-mobile-line {
     display: block;
-    border: 1px solid #eaeaea;
-    padding: 10px 0;
     margin: 30px 0 40px;
   }
 
   .filter-mobile-wrapper {
     display: flex;
-    justify-content: space-around;
-  }
-
-  .filter-mobile-left-wrap {
-    width: 50%;
-  }
-
-  .filter-mobile-right-wrap {
-    width: 50%;
-  }
-
-  .filter-mobile-sort {
-    text-align: center;
-    font-size: 16px;
-    border-right: 1px solid #eaeaea;
+    justify-content: space-between;
   }
 
   .filter-mobile-filters {
@@ -82,9 +72,13 @@
     font-size: 16px;
   }
 
-  .filter-mobile-wrapper i {
-    color: #959595;
-    margin-right: 5px;
+  .filter-mobile-sort {
+    text-align: center;
     font-size: 16px;
+  }
+
+  .filter-mobile-wrapper i {
+    font-size: 11px;
+    margin-left: 3px
   }
 }

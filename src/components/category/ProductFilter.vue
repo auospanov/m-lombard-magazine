@@ -43,6 +43,12 @@
                 </li>
               </ul>
             </div>
+            <div class="filter-wrap-right">
+                <div>
+                  По скидкам
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -50,18 +56,14 @@
     <div class="filter-mobile-line">
       <div class="container">
         <div class="row">
-          <div class="filter-mobile-wrapper">
-            <div class="filter-mobile-left-wrap">
-              <div class="filter-mobile-sort">
-                <i class="fas fa-arrows-alt-v"></i>
-                Сортировка
-              </div>
+          <div class="col-12 filter-mobile-wrapper">
+            <div class="filter-mobile-filters">
+              Фильтры
+              <i class="fas fa-chevron-down"></i>
             </div>
-            <div class="filter-mobile-right-wrap">
-              <div class="filter-mobile-filters">
-                <i class="fas fa-filter"></i>
-                Фильтры
-              </div>
+            <div class="filter-mobile-sort">
+              По скидкам
+              <i class="fas fa-chevron-down"></i>
             </div>
           </div>
         </div>
