@@ -1,6 +1,6 @@
 <template>
   <header>
-    <!-- <div class="container-fluid">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12 h-app-suggestion">
           <button class="h-app-suggestion__button">
@@ -14,7 +14,7 @@
           </button>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="h-top">
       <div class="container">
         <div class="row">
