@@ -1,88 +1,48 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="container footer">
       <div class="row">
-        <div class="col-md-12 mobile-footer">
-          <button class="collapsible">Покупателям</button>
-          <div class="footer-content">
-            <ul>
-              <li><a href="/personal-cabinet">Личный кабинет</a></li>
-              <li><a href="/delivery-payment">Доставка и оплата</a></li>
-              <li><a href="/return-exchange">Возврат и обмен</a></li>
-              <li><a href="">Акции</a></li>
-              <li><a href="">Клуб привелегий</a></li>
-              <li><a href="">Рассрочка и кредит</a></li>
-              <li><a href="/faq">Частые вопросы</a></li>
-              <li><a href="">Журнал</a></li>
-              <li><a href="">Карта сайта</a></li>
-            </ul>
-          </div>
-          <button class="collapsible">О компании</button>
-          <div class="footer-content">
-            <ul>
-              <li><a href="/about-company" class="footer-list-title">О компании</a></li>
-              <li><a href="">Работа у нас</a></li>
-              <li><a href="">Корпоративная культура</a></li>
-              <li><a href="">Ломбарды</a></li>
-              <li><a href="">Социальные проекты</a></li>
-              <li><a href="">Франчайзинг</a></li>
-              <li><a href="">Займы до зарплаты</a></li>
-              <li><a href="/contacts">Контакты</a></li>
-              <li><a href="">Правовая информация</a></li>
-            </ul>
-          </div>
+        <div class="col-md-3 col-12 footer-app">
+          <span class="footer-app__text">Мобильное приложение <br/> М-Ломбард</span>
+          <img src="@/assets/images/app-store.png" class="footer-app__img" alt="App Store" />
+          <img src="@/assets/images/google-play.png" class="footer-app__img" alt="Google Play" />
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2 desktop-footer">
-          <div class="footer-list-wrap">
-            <ul>
-              <li><a href="/" class="footer-list-title">Покупателям</a></li>
-              <li><a href="/personal-cabinet">Личный кабинет</a></li>
-              <li><a href="/delivery-payment">Доставка и оплата</a></li>
-              <li><a href="/return-exchange">Возврат и обмен</a></li>
-              <li><a href="">Акции</a></li>
-              <li><a href="">Клуб привелегий</a></li>
-              <li><a href="">Рассрочка и кредит</a></li>
-              <li><a href="/faq">Частые вопросы</a></li>
-              <li><a href="">Журнал</a></li>
-              <li><a href="">Карта сайта</a></li>
-            </ul>
-          </div>
+        <div class="col-md-6 col-12 footer-menu">
+          <ul class="footer-menu__row">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Вопросы</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Гарантия</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Рассрочка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Возврат</a>
+            </li>
+          </ul>
+          <ul class="footer-menu__row footer-menu__row--second">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Клуб</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Доставка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Оплата</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Оферта</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-2 desktop-footer">
-          <div class="footer-list-wrap">
-            <ul>
-              <li><a href="/about-company" class="footer-list-title">О компании</a></li>
-              <li><a href="">Работа у нас</a></li>
-              <li><a href="">Корпоративная культура</a></li>
-              <li><a href="">Ломбарды</a></li>
-              <li><a href="">Социальные проекты</a></li>
-              <li><a href="">Франчайзинг</a></li>
-              <li><a href="">Займы до зарплаты</a></li>
-              <li><a href="/contacts">Контакты</a></li>
-              <li><a href="">Правовая информация</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-5">
-
-        </div>
-        <div class="col-md-3">
-          <div class="footer-right-wrap">
-            <div class="footer-phone-wrap">
-              <a href="tel:">8 (***) *** ****</a>
-            </div>
-            <div class="footer-social-wrap">
-              <a href="" target="_blank"><img src="@/assets/images/instagram.svg" alt=""></a>
-              <a href="" target="_blank"><img src="@/assets/images/facebook.svg" alt=""></a>
-              <a href="" target="_blank"><img src="@/assets/images/whatsapp.svg" alt=""></a>
-            </div>
-            <div class="copyright">
-              2020, ©
-              Все права защищены. Информация, размещенная на данной странице, не является публичной офертой.
-            </div>
-          </div>
+        <div class="col-md-3 col-12 footer-contacts">
+          <p class="footer-contacts__text">
+            <span class="footer-contacts__support-text">Центр поддержки</span>
+            <a href="tel:87005955555" class="footer-contacts__phone">8-700-595-55-55</a>
+          </p>
+          <p class="footer-contacts__text footer-contacts__text--mt"> 2020, © М-Ломбард. <br/> Все права защищены. </p>
         </div>
       </div>
     </div>
