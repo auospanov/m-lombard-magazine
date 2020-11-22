@@ -16,11 +16,11 @@ export default {
 <style lang="scss">
   .page-not-found {
       padding: 0;
-      margin: 117px 0 0;
+      margin: 190px 0 0;
 
     @media screen and (max-width: 768px) {
       .page-not-found {
-        margin: 73px 0 0;
+        margin: 145px 0 0;
       }
     }
   }
