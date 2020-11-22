@@ -307,4 +307,60 @@ a.hr-w-ic-cart {
     justify-content: space-between;
     padding: 20px 15px;
   }
+
+  .mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);;
+  }
+
+  .mobile-menu {
+    width: 384px;
+    height: 100vh;
+
+    &__header {
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      background: #F2E28A;
+    }
+
+    &__button {
+      appearance: none;
+      border: none;
+      background: transparent;
+    }
+
+    &__title {
+      flex: 1;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__nav {
+      height: 100%;
+      background: #ffffff;
+    }
+
+    &__item {
+      padding: 20px 14px;
+      border-bottom: 1px #EAEAEA solid;
+    }
+
+    &__link {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-menu {
+    width: 100%;
+  }
 }

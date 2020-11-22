@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div class="row">
         <div class="col-12 h-app-suggestion">
           <button class="h-app-suggestion__button">
@@ -14,7 +14,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="h-top">
       <div class="container">
         <div class="row">
@@ -88,6 +88,31 @@
             </nav>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <button class="mobile-menu__button js-close-burger">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+          <span class="mobile-menu__title">
+            Меню
+          </span>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Войти / зарегистрироваться</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Бриллианты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Кольца</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>

@@ -7,8 +7,13 @@ $(document).ready(function(){
 });
 
 function initBurger() {
+    $('.mobile-menu-wrapper').hide();
     $('#burg').on('click', function() {
+        $('.mobile-menu-wrapper').fadeIn(400);
     });
+    $('.js-close-burger').on('click', function() {
+       $('.mobile-menu-wrapper').fadeOut(400);
+    })
 }
 
 function initCollapse() {
