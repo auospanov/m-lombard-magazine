@@ -12,6 +12,15 @@
   margin: 30px 0 20px;
 }
 
+.return-exchange {
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .return-exchange-section-width .container {
       width: 100%;
