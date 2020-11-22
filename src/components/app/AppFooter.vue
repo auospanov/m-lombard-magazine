@@ -10,7 +10,7 @@
         <div class="col-md-6 col-12 footer-menu">
           <ul class="footer-menu__row">
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Вопросы</a>
+              <a href="/faq" class="footer-menu__link">Вопросы</a>
             </li>
             <li class="footer-menu__item">
               <a href="#" class="footer-menu__link">Гарантия</a>
@@ -19,7 +19,7 @@
               <a href="#" class="footer-menu__link">Рассрочка</a>
             </li>
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Возврат</a>
+              <a href="/return-exchange" class="footer-menu__link">Возврат</a>
             </li>
           </ul>
           <ul class="footer-menu__row footer-menu__row--second">
@@ -27,10 +27,10 @@
               <a href="#" class="footer-menu__link">Клуб</a>
             </li>
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Доставка</a>
+              <a href="/delivery-payment" class="footer-menu__link">Доставка</a>
             </li>
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Оплата</a>
+              <a href="/delivery-payment" class="footer-menu__link">Оплата</a>
             </li>
             <li class="footer-menu__item">
               <a href="#" class="footer-menu__link">Оферта</a>
