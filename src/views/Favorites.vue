@@ -3,6 +3,15 @@
     <section class="fav-head-section">
       <div class="container">
         <div class="row">
+          <div class="col-12 favorites-page__cabinet-wrapper">
+            <p class="favorites-page__cabinet">
+              Войдите в свой аккаунт, чтобы увидеть товары, добавленные в избранное на других устройствах,
+              а так же сохранить существующие.
+            </p>
+            <button class="outline-button">Войти в аккаунт</button>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-md-12">
             <div class="fav-head-wrap">
               <h1 class="h1">
