@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="home-goods home-goods--mobile">
+    <div class="home-goods--mobile">
       <div class="container">
         <div class="row">
           <div class="col-12">
