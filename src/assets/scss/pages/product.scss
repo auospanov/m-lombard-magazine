@@ -254,6 +254,28 @@ p.description-line-char:last-child {
   border-radius: 15px;
 }
 
+.product-suite {
+
+  &__items {
+    margin-top: 20px;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      content: '+Комплект';
+      display: block;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .product-buy-advantages-wrapper {
     display: none;

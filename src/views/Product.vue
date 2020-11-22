@@ -111,6 +111,29 @@
         </div>
       </div>
     </section>
+    <section class="product-suite">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="global-title">+ Комплект</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container product-suite__items">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <a href="#">
+              <img src="@/assets/images/product-suite-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="#">
+              <img src="@/assets/images/product-suite-1.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <div id="myModall" class="modall">
       <span class="close cursor" @click="closeModal">&times;</span>
       <div class="modall-content">
