@@ -3,26 +3,25 @@
     <div class="h-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-lg-7 col-sm-2 col-2">
+          <div class="col-md-7 col-sm-2 col-2">
             <div id="burg">
               <span class="bar" id="top"></span>
               <span class="bar" id="middle"></span>
               <span class="bar" id="bottom"></span>
             </div>
           </div>
-          <div class="col-md-7 col-lg-7 col-sm-6 col-6">
+          <div class="col-md-10 col-sm-7 col-6">
             <div class="hl-lg-w">
               <a href="/" class="hl-lg-a">
-                <img src="@/assets/images/8jsg-_2k1.png" alt="логотип" />
+                <img src="@/assets/images/logo-shop.png" alt="Магазин" />
               </a>
+              <input type="text" class="hl-lg-input --desktop" placeholder="Поиск...">
+              <img src="@/assets/images/logo-lombard.png" class="hl-lg-logo-lombard" alt="Ломбард" />
             </div>
           </div>
-          <div class="col-md-5 col-sm-4 col-4">
+          <div class="col-md-2 col-sm-3 col-4">
             <div class="hr-w">
               <div class="hr-w-right">
-                <a href="#" class="hr-w-ic-search">
-                  <img src="@/assets/images/search.svg" alt="поиск" />
-                </a>
                 <router-link to="/favorites" class="header-favorites hr-w-ic-like">
                   <img src="@/assets/images/like.svg" alt="избранные" />
                   <span v-if="wishListCount" class="header-favorites__counter">{{ wishListCount }}</span>
@@ -36,6 +35,11 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row mobile-input-wrapper">
+          <div class="col-12">
+            <input type="text" class="hl-lg-input --mobile" placeholder="Поиск...">
           </div>
         </div>
       </div>
