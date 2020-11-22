@@ -255,7 +255,6 @@ p.description-line-char:last-child {
 }
 
 .product-suite {
-
   &__items {
     margin-top: 20px;
   }
@@ -273,6 +272,16 @@ p.description-line-char:last-child {
       top: 0;
       left: 0;
     }
+  }
+}
+
+.product-suggestions {
+  &__items {
+    margin-top: 20px;
+  }
+  
+  img {
+    width: 100%;
   }
 }
 

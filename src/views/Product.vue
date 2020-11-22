@@ -121,14 +121,37 @@
       </div>
       <div class="container product-suite__items">
         <div class="row">
-          <div class="col-md-3 col-6">
+          <div class="col-md-2 col-6">
             <a href="#">
               <img src="@/assets/images/product-suite-1.jpg" alt="" />
             </a>
           </div>
-          <div class="col-md-3 col-6">
+          <div class="col-md-2 col-6">
             <a href="#">
               <img src="@/assets/images/product-suite-1.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-suggestions">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="global-title">Вам может понравиться</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container product-suggestions__items">
+        <div class="row">
+          <div class="col-md-2 col-6">
+            <a href="#">
+              <img src="@/assets/images/product-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-md-2 col-6">
+            <a href="#">
+              <img src="@/assets/images/product-2.jpg" alt="" />
             </a>
           </div>
         </div>
