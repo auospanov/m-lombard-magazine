@@ -182,21 +182,21 @@ p.description-line-char:last-child {
   margin: 0;
 }
 
-.product-buy-advantages-wrap {
-  margin: 30px 0 0 0;
-}
-
 .product-buy-advantage-img {
-  width: 46px;
+  width: 40px;
   display: block;
-  margin: 0 auto 15px;
 }
 
 .product-buy-advantages-wrapper {
+  padding-top: 30px;
   display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #EAEAEA;
 }
 
 .products-buy-advantage {
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
@@ -254,6 +254,11 @@ p.description-line-char:last-child {
   border-radius: 15px;
 }
 
+@media screen and (max-width: 1024px) {
+  .product-buy-advantages-wrapper {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .product-section {

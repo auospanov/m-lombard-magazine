@@ -78,41 +78,31 @@
                 <div class="product-buy-advantages-wrap">
                   <div class="products-buy-advantage">
                     <img
-                      src="@/assets/images/truck2.svg"
+                      src="@/assets/images/advantage-price-blue.svg"
                       alt=""
                       class="product-buy-advantage-img"
                     />
-                    Бесплатная доставка
+                    Лучшая <br/> цена
                   </div>
                 </div>
                 <div class="product-buy-advantages-wrap">
                   <div class="products-buy-advantage">
                     <img
-                      src="@/assets/images/jewelery.svg"
+                      src="@/assets/images/advantage-gold-blue.svg"
                       alt=""
                       class="product-buy-advantage-img"
                     />
-                    Примерка перед покупкой
+                    Настоящее <br/> золото
                   </div>
                 </div>
                 <div class="product-buy-advantages-wrap">
                   <div class="products-buy-advantage">
                     <img
-                      src="@/assets/images/card-percentage.svg"
+                      src="@/assets/images/advantage-free-blue.svg"
                       alt=""
                       class="product-buy-advantage-img"
                     />
-                    Скидка при онлайн оплате
-                  </div>
-                </div>
-                <div class="product-buy-advantages-wrap">
-                  <div class="products-buy-advantage">
-                    <img
-                      src="@/assets/images/return.svg"
-                      alt=""
-                      class="product-buy-advantage-img"
-                    />
-                    Удобный возврат
+                      Камни <br/> бесплатно
                   </div>
                 </div>
               </div>
