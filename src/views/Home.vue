@@ -81,9 +81,10 @@
               class="no-shadow"
               :bullets="false"
               :arrows="false"
-              :visible-slides="3"
+              :visible-slides="2"
               slide-multiple
-              :dragging-distance="200"
+              :dragging-distance="50"
+              :slide-ratio="1 / 2"
             >
               <vueper-slide
                 v-for="(slide, i) in categorySlides"
@@ -111,7 +112,7 @@
               :visible-slides="4"
               :slide-ratio="1 / 5"
               slide-multiple
-              :dragging-distance="200"
+              :dragging-distance="50"
               :breakpoints="{ 768: { visibleSlides: 3, slideMultiple: 3 } }"
             >
               <vueper-slide
