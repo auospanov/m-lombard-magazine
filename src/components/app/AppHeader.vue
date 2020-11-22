@@ -91,6 +91,22 @@
             </nav>
           </div>
         </div>
+        <div class="row h-advantages">
+          <ul class="h-advantages__list">
+            <li class="h-advantages__item">
+              <img src="@/assets/images/advantage-price.svg" class="h-advantages__img" alt="">
+              <span>Лучшая цена</span>
+            </li>
+            <li class="h-advantages__item">
+              <img src="@/assets/images/advantage-gold.svg" class="h-advantages__img" alt="">
+              <span>Настоящее золото</span>
+            </li>
+            <li class="h-advantages__item">
+              <img src="@/assets/images/advantage-free.svg" class="h-advantages__img" alt="">
+              <span>Камни бесплатно</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="mobile-menu-wrapper">

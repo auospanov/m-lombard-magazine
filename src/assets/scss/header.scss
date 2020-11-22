@@ -1,7 +1,6 @@
 header {
   position: fixed;
   font-family: "Museo300";
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
   background-color: #fff;
   z-index: 9;
   width: 100%;
@@ -171,6 +170,35 @@ a.hr-w-ic-cart {
 
 .h-bot nav {
   padding: 0 75px;
+}
+
+.h-advantages {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #FFEE9F;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 65px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -356,6 +384,10 @@ a.hr-w-ic-cart {
       font-weight: 700;
       color: #000000;
     }
+  }
+
+  .h-app-suggestion {
+    display: none;
   }
 }
 
