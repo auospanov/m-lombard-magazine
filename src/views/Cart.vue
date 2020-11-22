@@ -75,6 +75,15 @@
                 <button class="cart-siebar-order e-button">Оформить заказ</button>
               </div>
             </div>
+            <div class="mobile-total">
+              <div class="mobile-total__content">
+                <span>Общая сумма</span>
+                <span>
+                  {{ prettyPrice(cartTotal) }}&nbsp;тг
+                </span>
+              </div>
+              <button class="e-button">Оформить заказ</button>
+            </div>
           </div>
         </div>
       </template>
