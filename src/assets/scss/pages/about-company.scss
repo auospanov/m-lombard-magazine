@@ -3,10 +3,14 @@
 }
 
 .about-company-1 {
-  margin-top: 117px;
+  margin-top: 190px;
 }
 
 @media screen and (max-width: 768px) {
+  .about-company-1 {
+    margin-top: 117px;
+  }
+
   .about-company-section-width .container {
       width: 100%;
   }

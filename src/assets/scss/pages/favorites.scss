@@ -1,11 +1,11 @@
 .e-section {
   padding: 40px 0;
-  margin: 117px 0 0;
+  margin: 190px 0 0;
 }
 
 section.fav-head-section {
   padding: 0 0 40px;
-  margin: 117px 0 0;
+  margin: 190px 0 0;
 }
 
 p.fav-head-p {
@@ -160,8 +160,12 @@ h2.fav-item-h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .fav-head-section {
-      margin: 73px 0 0;
+  .e-section {
+    margin: 117px 0 0;
+  }
+  
+  section.fav-head-section {
+      margin: 117px 0 0;
   }
 
   img.fav-item-heart-img {

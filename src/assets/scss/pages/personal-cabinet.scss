@@ -1,6 +1,6 @@
 .personal-cabinet {
   padding: 40px 0;
-  margin: 117px 0 0;
+  margin: 190px 0 0;
 }
 
 .personal-cab-wrap {
@@ -56,6 +56,10 @@ button.personal-cab-button[disabled] {
 }
 
 @media screen and (max-width: 768px) {
+  .personal-cabinet {
+    margin: 117px 0 0;
+  }
+
   .personal-cab-wrap h1 {
     font-size: 24px;
     margin: 0 0 15px;
