@@ -30,5 +30,8 @@
 <script>
 export default {
   name: 'PersonalCabinet',
+  methods: function(){
+    
+  }
 };
 </script>

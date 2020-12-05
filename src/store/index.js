@@ -124,5 +124,13 @@ export default new Vuex.Store({
           dispatch(ACTION_TYPES.INIT_WISH_LIST);
         });
     },
+    [ACTION_TYPES.AUTH_CUSTOMER]({ dispatch, state }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerAuthorization', {payload
+        
+      })
+        .then(() => {
+          dispatch(ACTION_TYPES.INIT_WISH_LIST);
+        });
+    },
   },
 });
