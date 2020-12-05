@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 import { MUTATION_TYPES } from './mutations';
 import { ACTION_TYPES } from './actions';
@@ -39,9 +39,20 @@ export default new Vuex.Store({
   },
   actions: {
     [ACTION_TYPES.INIT_CUSTOMER_ID]({ commit, state }) {
-      if (!state.customerId) {
-        const customerId = uuidv4();
-        commit(MUTATION_TYPES.SET_CUSTOMER_ID, customerId);
+      if (!state.ClientID) {
+        // const customerId = uuidv4();
+        // const pay = payload;
+        const tem = {
+          AnswerCode: 200,
+          ClientID: '000000001',
+          LastName: '77001245687',
+          Name: '77001245687',
+          SecondName: '77001245687',
+          ClientIIN: '77001245687',
+          PhoneNumber: '77001245687',
+          AuthLevel: 2,
+        };
+        commit(MUTATION_TYPES.SET_CUSTOMER_ID, tem.ClientID);
       }
     },
     [ACTION_TYPES.INIT_CART]({ commit, state }) {
@@ -124,12 +135,10 @@ export default new Vuex.Store({
           dispatch(ACTION_TYPES.INIT_WISH_LIST);
         });
     },
-    [ACTION_TYPES.AUTH_CUSTOMER]({ dispatch, state }, payload) {
-      axios.post('https://api.m-lombard.kz/CustomerAuthorization', {payload
-        
-      })
-        .then(() => {
-          dispatch(ACTION_TYPES.INIT_WISH_LIST);
+    [ACTION_TYPES.AUTH_CUSTOMER]({ commit }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerAuthorization', payload)
+        .then((res) => {
+          commit(MUTATION_TYPES.SET_WISH_LIST, res);
         });
     },
   },
