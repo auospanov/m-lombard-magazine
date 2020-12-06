@@ -138,7 +138,13 @@ export default new Vuex.Store({
     [ACTION_TYPES.AUTH_CUSTOMER]({ commit }, payload) {
       axios.post('https://api.m-lombard.kz/CustomerAuthorization', payload)
         .then((res) => {
-          commit(MUTATION_TYPES.SET_WISH_LIST, res);
+          commit(MUTATION_TYPES.SET_CUSTOMER_ID, res);
+        });
+    },
+    [ACTION_TYPES.REGISTER_CUSTOMER]({ commit }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerRegistration', payload)
+        .then((res) => {
+          commit(MUTATION_TYPES.SET_CUSTOMER_ID, res);
         });
     },
   },

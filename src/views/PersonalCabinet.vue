@@ -31,11 +31,11 @@
               Введите номер телефона для доступа к личному кабинету
             </p>
             <button type="submit" class="personal-cab-button" @click="authCustomer" :disabled="!phone || !password">
-              Войти в линый кабинет
+              Войти в личный кабинет
             </button>
-            <button type="submit" class="personal-cab-button-create" @click="authCustomer">
-              Создать линый кабинет
-            </button>
+            <router-link  to="/registration" class="personal-cab-button-create" @click="authCustomer" tag="button">
+              Создать личный кабинет
+            </router-link>
           </div>
         </div>
       </div>

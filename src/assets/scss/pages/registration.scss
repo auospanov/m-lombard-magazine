@@ -1,0 +1,102 @@
+.registration-cabinet {
+  padding: 40px 0;
+  margin: 190px 0 0;
+}
+
+.registration-cab-wrap {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  .confirm {
+    input[type=checkbox]{
+      margin-right: 10px;
+    } 
+    p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      a{
+        color: #1771B8;
+        font-weight: bold;
+        line-height: 14px;
+        
+      }
+    }
+  }
+}
+
+.registration-cab-wrap h1 {
+  margin: 0 0 30px;
+  font-family: "Museo300";
+  font-size: 28px;
+  text-align: center;
+}
+
+label.registration-cab-label {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+}
+
+input.registration-cab-input {
+  padding: 7px 5px;
+  font-size: 16px;
+  border: 1px solid #E3E3E3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  height: 45px;
+}
+
+input.registration-cab-input:focus {
+  border-color: #ffeb02;
+}
+
+p.registration-cab-under-input {
+  font-size: 16px;
+  color: #808080;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+button.registration-cab-button {
+  color: #FFFFFF;
+  background-color: #1771B8;
+  padding: 14px 30px;
+  border: 2px solid #1771B8;
+  font-size: 16px;
+  margin: 15px 0 0;;
+  border-radius: 5px;
+  &-create{
+    font-size:14px;
+    margin-top:20px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #888888;
+    padding: 14px 30px;
+    background-color: #FFFFFF;
+  }
+}
+
+button.registration-cab-button[disabled] {
+  cursor: not-allowed;
+  color: #808080;
+  background-color: #f9f9f9;
+  padding: 14px 30px;
+  border: 2px solid #eaeaea;
+  font-size: 16px;
+  margin: 15px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .registration-cabinet {
+    margin: 200px 0 0;
+  }
+
+  .registration-cab-wrap h1 {
+    font-size: 24px;
+    margin: 0 0 15px;
+  }
+}
