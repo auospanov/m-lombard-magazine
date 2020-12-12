@@ -72,7 +72,7 @@
                   <span class="cart-sidebar-precost"> Итого </span>
                   <span class="cart-sidebar-precost-2"> {{ prettyPrice(cartTotal) }}&nbsp;тг </span>
                 </div>
-                <button class="cart-siebar-order e-button">Оформить заказ</button>
+                 <router-link to="/create-order" class="cart-siebar-order e-button" tag="button">Оформить заказ</router-link>
               </div>
             </div>
             <div class="mobile-total">
@@ -82,7 +82,7 @@
                   {{ prettyPrice(cartTotal) }}&nbsp;тг
                 </span>
               </div>
-              <button class="e-button">Оформить заказ</button>
+              <router-link  to="/create-order" class="e-button" tag="button">Оформить заказ</router-link>
             </div>
           </div>
         </div>

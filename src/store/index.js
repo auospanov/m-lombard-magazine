@@ -22,6 +22,7 @@ export default new Vuex.Store({
     customerId: localStorage.getItem('app_customer_id') || null,
     cart: getJsonFromLocalStorage('app_cart', []),
     wishList: getJsonFromLocalStorage('app_wish_list', []),
+    customerInfo: localStorage.getItem('app_customer_info') || null,
   },
   mutations: {
     [MUTATION_TYPES.SET_CUSTOMER_ID](state, payload) {
@@ -35,6 +36,10 @@ export default new Vuex.Store({
     [MUTATION_TYPES.SET_WISH_LIST](state, payload) {
       localStorage.setItem('app_wish_list', JSON.stringify(payload));
       state.wishList = payload;
+    },
+    [MUTATION_TYPES.SET_CUSTOMER_INFO](state, payload) {
+      localStorage.setItem('app_customer_info', JSON.stringify(payload));
+      state.customerInfo = payload;
     },
   },
   actions: {
@@ -144,7 +149,15 @@ export default new Vuex.Store({
     [ACTION_TYPES.REGISTER_CUSTOMER]({ commit }, payload) {
       axios.post('https://api.m-lombard.kz/CustomerRegistration', payload)
         .then((res) => {
-          commit(MUTATION_TYPES.SET_CUSTOMER_ID, res);
+          console.log(res);
+          commit(MUTATION_TYPES.SET_CUSTOMER_INFO, res);
+        });
+    },
+    [ACTION_TYPES.CREATE_ORDER]({ commit }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerRegistration', payload)
+        .then((res) => {
+          console.log(res);
+          commit(MUTATION_TYPES.SET_CUSTOMER_INFO, res);
         });
     },
   },
