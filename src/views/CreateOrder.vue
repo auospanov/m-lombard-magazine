@@ -1,38 +1,38 @@
 <template>
-  <section class="order-cabinet">
+  <section class="order-createinet">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="order-cab-wrap">
+                <div class="order-create-wrap">
                     <h1 class="h1">Оформление заказа</h1>
-                    <label class="order-cab-label">Адрес доставки</label>
+                    <label class="order-create-label">Адрес доставки</label>
                     <input
                         type="text"
                         name=""
                         id=""
                         placeholder="Улица, город"
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="address"
                     />
-                    <label class="order-cab-label">Время доставки</label>
+                    <label class="order-create-label">Время доставки</label>
                     <input
                         type="text"
                         name=""
                         id=""
                         placeholder=""
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="delivery_date"
                     />
-                    <hr class="diveder">
+                    <hr class="diveder first">
                     <input
                         type="text"
                         name=""
                         id=""
                         placeholder=""
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="delivery_time"
                     />
                     <input
@@ -41,7 +41,7 @@
                         id=""
                         placeholder="Имя"
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="first_name"
                     />
                     <input
@@ -50,7 +50,7 @@
                         id=""
                         placeholder="Фамилия"
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="second_name"
                     />
                     <input
@@ -59,7 +59,7 @@
                         id=""
                         placeholder="Номер телефона"
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="phone"
                     />
                     <input
@@ -68,7 +68,7 @@
                         id=""
                         placeholder="Электронная почта"
                         autocomplete="on"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="email"
                     />
                     <textarea
@@ -77,25 +77,26 @@
                         cols="30"
                         rows="10"
                         placeholder="Комментарии"
-                        class="order-cab-input"
+                        class="order-create-input"
                         v-model="comment"
                     ></textarea>
-                    <p class="order-cab-label">1 товар на сумму 1к тг</p><br>
+                    <p class="summa">1 товар на сумму 1к тг</p>
                     <h2>Способ оплаты</h2>
                     <div class="d-flex confirm">
                         <input type="radio" id="radio" value="Онлайн оплата картой" v-model="payment_type">
                         <p>Онлайн оплата картой</p>
                     </div>
-                    <div class="d-flex">
-                        <p class="order-cab-label">Товары на сумму:</p>
-                        <p>10 000тг</p>
+                    <hr class="diveder">
+                    <div class="order-create-price d-flex justify-content-between">
+                        <p class="order-create-price-title">Товары на сумму:</p>
+                        <p class="order-create-price-sum">10 000тг</p>
                     </div>
-                    <div class="d-flex">
-                        <p class="order-cab-label">Доставка:</p>
-                        <p>Бесплатно</p>
+                    <div class="order-create-price d-flex justify-content-between">
+                        <p class="order-create-price-title">Доставка:</p>
+                        <p class="order-create-price-delivery">Бесплатно</p>
                     </div>
-                    <p>Нажимая на кнопку “Оформить заказ”, вы принимаете условия <a href="">Публичной оферты</a></p>
-                    <button type="submit" class="order-cab-button" @click="createOrder" >
+                    <p class="warning">Нажимая на кнопку “Оформить заказ”, вы принимаете условия <a href="">Публичной оферты</a></p>
+                    <button type="submit" class="order-create-button" @click="createOrder" >
                         Оформить заказ
                     </button>
                 </div>
