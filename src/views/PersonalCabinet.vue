@@ -51,8 +51,8 @@ export default {
   name: 'PersonalCabinet',
   data() {
     return {
-      phone: '3',
-      password: '3',
+      phone: '87077731492',
+      password: '123456789',
     };
   },
   methods: {
@@ -60,11 +60,13 @@ export default {
     authCustomer() {
       appLoader.show();
       this.AUTH_CUSTOMER({
-        PhoneNumber: '77001245687',
-        PSW: '77001245687',
+        PhoneNumber: this.phone,
+        PSW: this.password,
         deviceID: '',
       })
-        .then(() => appLoader.hide())
+        .then(() => {
+          appLoader.hide();
+        })
         .catch((err) => {
           appLoader.hide();
           this.$toasted.show(err.message);
