@@ -13,13 +13,29 @@
               placeholder="+7"
               autocomplete="on"
               class="personal-cab-input"
+              v-model="phone"
             />
             <p class="personal-cab-under-input">
               Введите номер телефона для доступа к личному кабинету
             </p>
-            <button type="submit" class="personal-cab-button" disabled>
-              Продолжить
+            <label class="personal-cab-label mt-5">Пароль</label>
+            <input
+              type="password"
+              name=""
+              id=""
+              autocomplete="on"
+              class="personal-cab-input"
+              v-model="password"
+            />
+            <p class="personal-cab-under-input">
+              Введите номер телефона для доступа к личному кабинету
+            </p>
+            <button type="submit" class="personal-cab-button" @click="authCustomer" :disabled="!phone || !password">
+              Войти в личный кабинет
             </button>
+            <router-link  to="/registration" class="personal-cab-button-create" @click="authCustomer" tag="button">
+              Создать личный кабинет
+            </router-link>
           </div>
         </div>
       </div>
@@ -28,7 +44,34 @@
 </template>
 
 <script>
+import { appLoader } from '@shared/utils/app-loader';
+import { mapActions } from 'vuex';
+
 export default {
   name: 'PersonalCabinet',
+  data() {
+    return {
+      phone: '87077731492',
+      password: '123456789',
+    };
+  },
+  methods: {
+    ...mapActions(['AUTH_CUSTOMER']),
+    authCustomer() {
+      appLoader.show();
+      this.AUTH_CUSTOMER({
+        PhoneNumber: this.phone,
+        PSW: this.password,
+        deviceID: '',
+      })
+        .then(() => {
+          appLoader.hide();
+        })
+        .catch((err) => {
+          appLoader.hide();
+          this.$toasted.show(err.message);
+        });
+    },
+  },
 };
 </script>

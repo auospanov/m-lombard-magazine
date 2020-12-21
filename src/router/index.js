@@ -15,6 +15,8 @@ import PersonalCabinet from '../views/PersonalCabinet';
 import Product1 from '../views/Product1';
 import ReturnExchange from '../views/ReturnExchange';
 import PageNotFound from '../views/PageNotFound';
+import Registration from '../views/Registration';
+import CreateOrder from '../views/CreateOrder';
 
 Vue.use(VueRouter);
 
@@ -98,6 +100,18 @@ const routes = [
     path: '/personal-cabinet',
     name: 'PersonalCabinet',
     component: PersonalCabinet,
+    meta: { title: 'М-Ломбард - Личный кабинет' },
+  },
+  {
+    path: '/registration',
+    name: 'Registration',
+    component: Registration,
+    meta: { title: 'М-Ломбард - Личный кабинет' },
+  },
+  {
+    path: '/create-order',
+    name: 'CreateOrder',
+    component: CreateOrder,
     meta: { title: 'М-Ломбард - Личный кабинет' },
   },
   {

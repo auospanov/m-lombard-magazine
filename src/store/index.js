@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 import { MUTATION_TYPES } from './mutations';
 import { ACTION_TYPES } from './actions';
@@ -22,6 +22,7 @@ export default new Vuex.Store({
     customerId: localStorage.getItem('app_customer_id') || null,
     cart: getJsonFromLocalStorage('app_cart', []),
     wishList: getJsonFromLocalStorage('app_wish_list', []),
+    customerInfo: localStorage.getItem('app_customer_info') || null,
   },
   mutations: {
     [MUTATION_TYPES.SET_CUSTOMER_ID](state, payload) {
@@ -36,12 +37,27 @@ export default new Vuex.Store({
       localStorage.setItem('app_wish_list', JSON.stringify(payload));
       state.wishList = payload;
     },
+    [MUTATION_TYPES.SET_CUSTOMER_INFO](state, payload) {
+      localStorage.setItem('app_customer_info', JSON.stringify(payload));
+      state.customerInfo = payload;
+    },
   },
   actions: {
     [ACTION_TYPES.INIT_CUSTOMER_ID]({ commit, state }) {
-      if (!state.customerId) {
-        const customerId = uuidv4();
-        commit(MUTATION_TYPES.SET_CUSTOMER_ID, customerId);
+      if (!state.ClientID) {
+        // const customerId = uuidv4();
+        // const pay = payload;
+        const tem = {
+          AnswerCode: 200,
+          ClientID: '000000001',
+          LastName: '77001245687',
+          Name: '77001245687',
+          SecondName: '77001245687',
+          ClientIIN: '77001245687',
+          PhoneNumber: '77001245687',
+          AuthLevel: 2,
+        };
+        commit(MUTATION_TYPES.SET_CUSTOMER_ID, tem.ClientID);
       }
     },
     [ACTION_TYPES.INIT_CART]({ commit, state }) {
@@ -122,6 +138,36 @@ export default new Vuex.Store({
       })
         .then(() => {
           dispatch(ACTION_TYPES.INIT_WISH_LIST);
+        });
+    },
+    [ACTION_TYPES.AUTH_CUSTOMER]({ commit }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerAuthorization', payload)
+        .then((res) => {
+          if (res.AnswerCode === 200) {
+            const info = {
+              LastName: res.LastName,
+              Name: res.Name,
+              SecondName: res.SecondName,
+              ClientIIN: res.ClientIIN,
+              PhoneNumber: res.PhoneNumber,
+            };
+            commit(MUTATION_TYPES.SET_CUSTOMER_ID, res.ClientID);
+            commit(MUTATION_TYPES.SET_CUSTOMER_INFO, info);
+          }
+        });
+    },
+    [ACTION_TYPES.REGISTER_CUSTOMER]({ commit }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerRegistration', payload)
+        .then((res) => {
+          console.log(res);
+          commit(MUTATION_TYPES.SET_CUSTOMER_INFO, res);
+        });
+    },
+    [ACTION_TYPES.CREATE_ORDER]({ commit }, payload) {
+      axios.post('https://api.m-lombard.kz/CustomerRegistration', payload)
+        .then((res) => {
+          console.log(res);
+          commit(MUTATION_TYPES.SET_CUSTOMER_INFO, res);
         });
     },
   },
